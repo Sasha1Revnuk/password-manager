@@ -1,0 +1,187 @@
+
+.chosen-drop .chosen-results {
+    max-height: 100px !important;
+}
+
+.chosen-container {
+    padding: 0.4rem 0rem;
+}
+
+.table-text-align-center {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.table-img {
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.table-img-max-width-100 {
+    max-width: 100px !important;
+}
+
+.bg-for-panel {
+    background-image: linear-gradient(270deg, rgba(51, 148, 225, 0.4), transparent);
+    background-color: #0a141b;
+    padding: 15px 20px;
+    margin-bottom: 0.3rem !important;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    position: relative;
+    box-shadow: 0px 0px 13px 0px rgba(62, 44, 90, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: border 500ms ease-out;
+}
+
+.bg-for-panel>div>h2 {
+    margin-bottom: 0 !important;
+}
+
+.panel-toolbar {
+    justify-content: flex-end;
+}
+
+.filters .btn{
+    color: #0a141b;
+    border-color: #0a141b;
+    /*background-image: linear-gradient(270deg, rgba(51, 148, 225, 0.4), transparent);*/
+    /*background-color: #0a141b;*/
+}
+
+.filters .btn-using{
+    color: #ffffff;
+    border-color: #0a141b;
+    background-image: linear-gradient(270deg, rgba(51, 148, 225, 0.4), transparent);
+    background-color: #0a141b;
+}
+
+.filters .btn:hover{
+    color: #ffffff;
+    border-color: #0a141b;
+    background-image: linear-gradient(270deg, rgba(51, 148, 225, 0.4), transparent);
+    background-color: #0a141b;
+}
+
+.filters>div{
+    padding-left: 0.75rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.second-filters>div{
+    padding-left: 0.75rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.onCenterRow {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.wrongSelect {
+    border-color: #fd3995;
+    padding-right: calc(1.47em + 1rem);
+}
+
+.program-price{
+    border: #112a3e solid 5px;
+    box-shadow: 0 0 20px  rgba(51, 148, 225, 0.4);
+}
+
+
+.program-price-title{
+    margin: auto;
+}
+
+.danger-span{
+    display: inline-block;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0 2px 6px 0 rgba(253, 57, 149, 0.5);
+    padding: 1px 0.844rem;
+    cursor: text;
+    font-size: .7rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: #fff;
+    background-color: #fd3995;
+    border-color: #fd3995;
+}
+.warning-span{
+    display: inline-block;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0 2px 6px 0 rgba(253, 57, 149, 0.5);
+    padding: 1px 0.844rem;
+    cursor: text;
+    font-size: .7rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: #000;
+    background-color: #ffc241;
+    border-color: #ffc241;
+}
+
+.success-span{
+    display: inline-block;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0 2px 6px 0 rgba(253, 57, 149, 0.5);
+    padding: 1px 0.844rem;
+    cursor: text;
+    font-size: .7rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: #000;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.panel-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+    min-height: 3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 4px 4px 0 0;
+    -webkit-transition: background-color 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
+}
+
+.panel-header h2{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 0.875rem;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 3rem;
+    color: inherit;
+    color: #333;
+    position: relative;
+    font-weight: 500;
+}
+
+.panel-header h2:not(:only-child) {
+    margin-right: 0.66667rem;
+}
+
+.panel-header > :first-child {
+    padding-left: 1rem;
+}

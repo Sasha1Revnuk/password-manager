@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Auth::routes([
+    'reset' => false, // Password Reset Routes...
+    'verify' => false, // Email Verification Routes...
+    ]);
+Route::get('/logout', 'Auth\LoginController@logout')->name('logoutAdmin');
+
+Route::get('/home', 'HomeController@index')->name('home');

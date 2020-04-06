@@ -1,0 +1,1377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1884c919-dd55-4395-bec9-bb8ebd5a2aed" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/app.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/app.bundle.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/bootstrap-clockpicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/datagrid/datatables/datatables.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/datagrid/datatables/datatables.bundle.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/fa-brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/fa-brands.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/fa-regular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/fa-regular.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/fa-solid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/fa-solid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/bootstrap-colorpicker/bootstrap-colorpicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/bootstrap-colorpicker/bootstrap-colorpicker.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/bootstrap-datepicker/bootstrap-datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/bootstrap-datepicker/bootstrap-datepicker.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/bootstrap-daterangepicker/bootstrap-daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/bootstrap-daterangepicker/bootstrap-daterangepicker.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/bootstrap-markdown/bootstrap-markdown.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/bootstrap-markdown/bootstrap-markdown.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/cropperjs/cropper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/cropperjs/cropper.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/dropzone/dropzone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/dropzone/dropzone.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/ion-rangeslider/ion-rangeslider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/ion-rangeslider/ion-rangeslider.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/nouislider/nouislider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/nouislider/nouislider.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/select2/select2.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/select2/select2.bundle.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/smartwizard/smartwizard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/smartwizard/smartwizard.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/summernote/summernote.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/formplugins/summernote/summernote.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/miscellaneous/fullcalendar/fullcalendar.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/miscellaneous/fullcalendar/fullcalendar.bundle.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/miscellaneous/jqvmap/jqvmap.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/miscellaneous/jqvmap/jqvmap.bundle.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/miscellaneous/lightgallery/lightgallery.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/miscellaneous/lightgallery/lightgallery.bundle.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/miscellaneous/nestable/nestable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/miscellaneous/nestable/nestable.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/miscellaneous/reactions/reactions.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/miscellaneous/reactions/reactions.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/notifications/sweetalert2/sweetalert2.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/notifications/sweetalert2/sweetalert2.bundle.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/notifications/toastr/toastr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/notifications/toastr/toastr.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/page-invoice.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/page-invoice.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/page-login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/page-login.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/statistics/c3/c3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/statistics/c3/c3.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/statistics/chartist/chartist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/statistics/chartist/chartist.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/statistics/chartjs/chartjs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/statistics/chartjs/chartjs.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/statistics/dygraph/dygraph.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/statistics/dygraph/dygraph.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/theme-demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/theme-demo.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-1.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-10.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-10.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-11.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-11.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-12.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-12.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-13.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-13.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-2.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-3.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-4.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-5.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-6.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-7.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-8.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-9.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/themes/cust-theme-9.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/vendors.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/css/vendors.bundle.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/backgrounds/bg-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/backgrounds/bg-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/backgrounds/bg-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/backgrounds/bg-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/backgrounds/bg-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/backgrounds/clouds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/backgrounds/credit.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/backgrounds/page-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/backgrounds/prev-bg-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/backgrounds/prev-bg-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/backgrounds/prev-bg-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/backgrounds/prev-bg-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/bitbucket-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/card-backgrounds/cover-1-lg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/card-backgrounds/cover-2-lg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/card-backgrounds/cover-3-lg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/card-backgrounds/cover-4-lg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/card-backgrounds/cover-5-lg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/card-backgrounds/cover-6-lg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/angular.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/authors/josh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/authors/jovanni.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/authors/roberto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/authors/sunny.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-admin-lg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-admin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-admin.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-g.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-i.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-j.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-k.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/avatar-m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/cc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/avatars/ng.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/debounce-at_begin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/debounce.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/demo-panel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/28.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/34.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/35.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/36.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/39.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/42.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/43.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/44.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/45.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/46.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/47.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/48.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/49.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/51.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/52.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/54.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/55.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/56.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/58.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/59.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/source.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/28.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/34.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/35.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/36.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/39.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/42.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/43.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/44.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/45.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/46.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/47.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/48.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/49.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/51.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/52.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/54.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/55.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/56.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/58.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/59.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/gallery/thumb/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/grid-options.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/html5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/mvc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/peace-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/php.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/position-absolute.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/position-fixed.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/position-sticky.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/profile/article-healthyfood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/profile/cc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/rails.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/react.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/relax-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/s-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/sea-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/search/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/search/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/search/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/search/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/search/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/search/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/search/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/search/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/search/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/search/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/search/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/search/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/side-panel-demo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/skins/black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/skins/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/skins/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/skins/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/throttle-no_trailing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/throttle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/demo/vuejs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/favicon/android-chrome-144x144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/favicon/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/favicon/browserconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/favicon/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/favicon/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/favicon/favicon-generator.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/favicon/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/favicon/mstile-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/favicon/safari-pinned-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/favicon/site.webmanifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/logo-flat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/logo-gradient.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/svg/pattern-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/svg/pattern-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/svg/pattern-3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/svg/pattern-4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/ng-thumb-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/ng-thumb-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/ng-thumb-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/ng-thumb-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/ng-thumb-video-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/ng-thumb-video-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/pic-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/pic-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/pic-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/pic-12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/pic-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/pic-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/pic-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/pic-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/pic-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/pic-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/img/thumbs/pic-9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/app.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/bootstrap-clockpicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/datagrid/datatables/datatables.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/datagrid/datatables/datatables.export.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/dependency/moment/moment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/formplugins/bootstrap-colorpicker/bootstrap-colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/formplugins/bootstrap-datepicker.ua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/formplugins/bootstrap-datepicker/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/formplugins/bootstrap-daterangepicker/bootstrap-daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/formplugins/bootstrap-markdown/bootstrap-markdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/formplugins/cropperjs/cropper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/formplugins/dropzone/dropzone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/formplugins/inputmask/inputmask.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/formplugins/ion-rangeslider/ion-rangeslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/formplugins/nouislider/nouislider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/formplugins/select2/select2.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/formplugins/smartwizard/smartwizard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/formplugins/summernote/summernote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/holder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/i18n/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/fullcalendar/fullcalendar.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/jqvmap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.algeria.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.argentina.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.brazil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.canada.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.europe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.france.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.germany.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.greece.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.iran.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.iraq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.russia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.tunisia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.turkey.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/jqvmap/maps/jquery.vmap.usa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/lightgallery/lightgallery.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/lightgallery/smartvoice.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/miscellaneous/nestable/nestable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/notifications/sweetalert2/sweetalert2.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/notifications/toastr/toastr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/objectCreate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/objectEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/objects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/abonementAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/abonementPromotionEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/abonementPromotions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/abonements.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/coachAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/coachEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/coachToTariffPlan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/coaches.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/programAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/programCategories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/programCategoryEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/programEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/programSales.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/programSalesAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/programs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/promotionEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/promotions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/sectionEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/sections.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/tariffAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/tariffEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/tariffPlans.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/visitorAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/visitorEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/panel/visitors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/statistics/c3/c3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/statistics/chartist/chartist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/statistics/chartjs/chartjs.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/statistics/d3/d3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/statistics/demo-data/demo-c3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/statistics/demo-data/demo-data-dygraph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/statistics/dygraph/dygraph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/statistics/easypiechart/easypiechart.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/statistics/flot/flot.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/statistics/peity/peity.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/statistics/sparkline/sparkline.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/js/vendors.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/data/2500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/data/ch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/data/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/data/es.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/data/fa-brand-list.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/data/fa-icon-list.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/data/ng-bg-colors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/data/ng-icon-base.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/data/ng-icon-list.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/data/ng-text-colors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/data/plugin-reference.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/data/server-demo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/sound/bigbox.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/sound/bigbox.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/sound/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/sound/messagebox.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/sound/messagebox.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/sound/smallbox.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/sound/smallbox.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/sound/voice_alert.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/sound/voice_alert.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/sound/voice_off.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/sound/voice_off.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/sound/voice_on.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/sound/voice_on.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/video/36150715-heavenly-clouds-v2-license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/video/cc.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/media/video/cc.webm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/build/pdf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/build/pdf.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/build/pdf.worker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/build/pdf.worker.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/78-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/78-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/78-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/78-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/78-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/78-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/78ms-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/78ms-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/83pv-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/90ms-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/90ms-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/90msp-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/90msp-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/90pv-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/90pv-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Add-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Add-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Add-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Add-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-CNS1-0.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-CNS1-1.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-CNS1-2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-CNS1-3.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-CNS1-4.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-CNS1-5.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-CNS1-6.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-CNS1-UCS2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-GB1-0.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-GB1-1.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-GB1-2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-GB1-3.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-GB1-4.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-GB1-5.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-GB1-UCS2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-Japan1-0.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-Japan1-1.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-Japan1-2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-Japan1-3.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-Japan1-4.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-Japan1-5.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-Japan1-6.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-Japan1-UCS2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-Korea1-0.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-Korea1-1.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-Korea1-2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Adobe-Korea1-UCS2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/B5pc-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/B5pc-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/CNS-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/CNS-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/CNS1-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/CNS1-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/CNS2-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/CNS2-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/ETHK-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/ETHK-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/ETen-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/ETen-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/ETenms-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/ETenms-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Ext-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Ext-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Ext-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Ext-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GB-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GB-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GB-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GB-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBK-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBK-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBK2K-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBK2K-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBKp-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBKp-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBT-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBT-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBT-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBT-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBTpc-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBTpc-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBpc-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/GBpc-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/HKdla-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/HKdla-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/HKdlb-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/HKdlb-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/HKgccs-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/HKgccs-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/HKm314-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/HKm314-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/HKm471-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/HKm471-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/HKscs-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/HKscs-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Hankaku.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Hiragana.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/KSC-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/KSC-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/KSC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/KSC-Johab-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/KSC-Johab-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/KSC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/KSCms-UHC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/KSCms-UHC-HW-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/KSCms-UHC-HW-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/KSCms-UHC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/KSCpc-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/KSCpc-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Katakana.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/NWP-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/NWP-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/Roman.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniCNS-UCS2-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniCNS-UCS2-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniCNS-UTF16-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniCNS-UTF16-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniCNS-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniCNS-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniCNS-UTF8-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniCNS-UTF8-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniGB-UCS2-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniGB-UCS2-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniGB-UTF16-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniGB-UTF16-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniGB-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniGB-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniGB-UTF8-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniGB-UTF8-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS-UCS2-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS-UCS2-HW-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS-UCS2-HW-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS-UCS2-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS-UTF16-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS-UTF16-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS-UTF8-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS-UTF8-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS2004-UTF16-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS2004-UTF16-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS2004-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS2004-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS2004-UTF8-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJIS2004-UTF8-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJISPro-UCS2-HW-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJISPro-UCS2-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJISPro-UTF8-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJISX0213-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJISX0213-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJISX02132004-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniJISX02132004-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniKS-UCS2-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniKS-UCS2-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniKS-UTF16-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniKS-UTF16-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniKS-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniKS-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniKS-UTF8-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/UniKS-UTF8-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/cmaps/WP-Symbol.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/compressed.tracemonkey-pldi-09.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/debugger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/annotation-check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/annotation-comment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/annotation-help.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/annotation-insert.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/annotation-key.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/annotation-newparagraph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/annotation-noicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/annotation-note.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/annotation-paragraph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/findbarButton-next-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/findbarButton-next-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/findbarButton-next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/findbarButton-next@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/findbarButton-previous-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/findbarButton-previous-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/findbarButton-previous.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/findbarButton-previous@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/grab.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/grabbing.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/loading-icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/loading-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/loading-small@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-documentProperties.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-documentProperties@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-firstPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-firstPage@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-handTool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-handTool@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-lastPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-lastPage@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-rotateCcw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-rotateCcw@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-rotateCw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-rotateCw@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-scrollHorizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-scrollHorizontal@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-scrollVertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-scrollVertical@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-scrollWrapped.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-scrollWrapped@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-selectTool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-selectTool@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-spreadEven.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-spreadEven@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-spreadNone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-spreadNone@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-spreadOdd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/secondaryToolbarButton-spreadOdd@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-bookmark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-bookmark@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-download@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-menuArrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-menuArrows@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-openFile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-openFile@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-pageDown-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-pageDown-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-pageDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-pageDown@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-pageUp-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-pageUp-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-pageUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-pageUp@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-presentationMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-presentationMode@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-print@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-search@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-secondaryToolbarToggle-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-secondaryToolbarToggle-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-secondaryToolbarToggle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-secondaryToolbarToggle@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-sidebarToggle-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-sidebarToggle-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-sidebarToggle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-sidebarToggle@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-viewAttachments.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-viewAttachments@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-viewOutline-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-viewOutline-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-viewOutline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-viewOutline@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-viewThumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-viewThumbnail@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-zoomIn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-zoomIn@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-zoomOut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/toolbarButton-zoomOut@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/treeitem-collapsed-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/treeitem-collapsed-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/treeitem-collapsed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/treeitem-collapsed@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/treeitem-expanded.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/images/treeitem-expanded@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ach/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/af/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ak/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/an/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ar/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/as/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ast/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/az/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/be/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/bg/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/bn-BD/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/bn-IN/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/br/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/brx/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/bs/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ca/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/cak/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/crh/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/cs/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/csb/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/cy/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/da/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/de/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/el/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/en-CA/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/en-GB/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/en-US/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/en-ZA/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/eo/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/es-AR/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/es-CL/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/es-ES/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/es-MX/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/et/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/eu/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/fa/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ff/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/fi/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/fr/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/fy-NL/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ga-IE/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/gd/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/gl/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/gn/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/gu-IN/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/he/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/hi-IN/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/hr/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/hsb/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/hto/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/hu/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/hy-AM/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ia/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/id/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/is/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/it/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ja/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ka/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/kab/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/kk/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/km/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/kn/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ko/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/kok/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ks/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ku/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/lg/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/lij/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/lo/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/locale.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/lt/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ltg/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/lv/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/mai/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/meh/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/mk/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ml/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/mn/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/mr/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ms/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/my/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/nb-NO/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ne-NP/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/nl/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/nn-NO/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/nso/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/oc/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/or/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/pa-IN/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/pl/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/pt-BR/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/pt-PT/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/rm/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ro/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ru/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/rw/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/sah/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/sat/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/si/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/sk/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/sl/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/son/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/sq/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/sr/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/sv-SE/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/sw/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ta-LK/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ta/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/te/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/th/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/tl/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/tn/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/tr/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/tsz/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/uk/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/ur/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/uz/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/vi/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/wo/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/xh/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/zam/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/zh-CN/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/zh-TW/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/locale/zu/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/viewer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/viewer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/viewer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/pdf-js/web/viewer.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-light-300.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-light-300.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-light-300.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-light-300.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-light-300.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/nextgen-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/nextgen-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/nextgen-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/nextgen-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/nextgen-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/summernote.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/summernote.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/acc/webfonts/summernote.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/alerts/danger.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/alerts/message.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/alerts/success.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/breadcrumb.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/main-menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/menu/multiple.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/menu/simple.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/modal-header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/page-logo.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/panel-menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/panel-menu/multiple.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/panel-menu/simple.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/pdf.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/account/right-navbar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/errors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="password_manager_db@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="password_manager_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="password_manager_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="password_manager_db: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014_10_12_000000_create_users_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/account/index.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="970" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="password-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="password-manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="password-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="password-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="password-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="password-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="password-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="password-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="password-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="password-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="password-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="password-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="password-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="password-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Учеба\password-manager\resources\views" />
+      <recent name="E:\Учеба\password-manager\public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1884c919-dd55-4395-bec9-bb8ebd5a2aed" name="Default" comment="" />
+      <created>1586072713273</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586072713273</updated>
+      <workItem from="1586072714436" duration="222000" />
+      <workItem from="1586079910405" duration="597000" />
+      <workItem from="1586156020800" duration="647000" />
+      <workItem from="1586168889756" duration="11000" />
+      <workItem from="1586177556710" duration="2378000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3855000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3298969" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19798657" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.12885906" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" weight="0.3298969" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/panel-menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="107" column="63" selection-start-line="107" selection-start-column="63" selection-end-line="107" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/panel-menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="107" column="63" selection-start-line="107" selection-start-column="63" selection-end-line="107" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/panel-menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="107" column="63" selection-start-line="107" selection-start-column="63" selection-end-line="107" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1b18150d-afff-4817-b615-14a17c9692b4/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/acc/js/i18n/i18n.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/menu/simple.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/main-menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b18150d-afff-4817-b615-14a17c9692b4/schema/password_manager_db/table/migrations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="107" column="63" selection-start-line="107" selection-start-column="63" selection-end-line="107" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/panel-menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-851" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
