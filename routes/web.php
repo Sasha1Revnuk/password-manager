@@ -25,3 +25,5 @@ Auth::routes([
 Route::get('/logout', 'Auth\LoginController@logout')->name('logoutAdmin');
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/sendhtmlemail','MailController@htmlEmail')->name('mailSender');
+

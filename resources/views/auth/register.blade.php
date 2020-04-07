@@ -1,77 +1,149 @@
-@extends('layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>
+        Реэстрація | Password Manager
+    </title>
+    <meta name="description" content="Login">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+    <!-- Call App Mode on ios devices -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Remove Tap Highlight on Windows Phone IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- base css -->
+    <link rel="stylesheet" media="screen, print" href="{{asset('acc/css/vendors.bundle.css')}}">
+    <link rel="stylesheet" media="screen, print" href="{{asset('acc/css/app.bundle.css')}}">
+    <link rel="stylesheet" media="screen, print" href="{{asset('acc/css/custom.css')}}">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('img/favicon/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('img/favicon/favicon-32x32.png')}}">
+    <link rel="mask-icon" href="{{asset('img/favicon/safari-pinned-tab.svg')}}" color="#5bbad5">
+    <!-- Optional: page related CSS-->
+    <link rel="stylesheet" media="screen, print" href="{{asset('css/fa-brands.css')}}">
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="page-inner bg-brand-gradient">
+        <div class="page-content-wrapper bg-transparent m-0">
+            <div class="height-10 w-100 shadow-lg px-4 bg-brand-gradient">
+                <div class="d-flex align-items-center container p-0">
+                    <div class="page-logo width-mobile-auto m-0 align-items-center justify-content-center p-0 bg-transparent bg-img-none shadow-0 height-9">
+                        <a href="/" class="page-logo-link press-scale-down d-flex align-items-center">
+                            <img src="{{asset('acc/img/logo.png')}}" alt="ym Control" aria-roledescription="logo">
+                            <span class="page-logo-text mr-1">Password Manager</span>
+                        </a>
+                    </div>
+                    <a href="{{route('login')}}" class="btn-link text-white ml-auto">
+                        Авторизація
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1" >
+                <div class="container py-4 py-lg-5 my-lg-5 px-4 px-sm-0">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <h2 class="fs-xxl fw-500 mt-4 text-white text-center">
+                                Рєстрація безкоштовна!
+                                <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60 hidden-sm-down">
+                                    Реєстрація користувача надає можливість приступити до управління своїми паролями
+                                </small>
+                            </h2>
+                        </div>
+                        <div class="col-xl-6 ml-auto mr-auto">
+                            <div class="card p-4 rounded-plus bg-faded">
+                                @if($errors->any())
+                                    @foreach($errors->all() as $error)
+                                        @include('layouts.account.alerts.danger', ['alert' => $error])
+                                    @endforeach
+                                @endif
+                                <form id="js-login" method="POST" action="{{ route('register') }}">
+                                    @csrf
+                                    <div class="form-group row">
+                                        @error('first_name')
+                                        <div class="alert border-danger bg-transparent text-danger" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </div>
+                                        @enderror
+                                        @error('last_name')
+                                        <div class="alert border-danger bg-transparent text-danger" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </div>
+                                        @enderror
+                                        <label class="col-xl-12 form-label" for="fname">Ваше ім'я та прізвище</label>
+                                        <div class="col-6 pr-1">
+                                            <input type="text" id="fname" name="first_name" class="form-control" placeholder="Ім'я" required>
+                                        </div>
+                                        <div class="col-6 pl-1">
+                                            <input type="text" id="lname" name="last_name" class="form-control" placeholder="Прізвище" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        @error('email')
+                                        <div class="alert border-danger bg-transparent text-danger" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </div>
+                                        @enderror
+                                        <label class="form-label" for="emailverify">Email буде використано для підтвердження створення аккаунту</label>
+                                        <input type="email" id="emailverify" class="form-control" placeholder="Email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        @error('password')
+                                        <div class="alert border-danger bg-transparent text-danger" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </div>
+                                        @enderror
+                                        <label class="form-label" for="userpassword">Пароль:</label>
+                                        <input type="password" id="userpassword" class="form-control" placeholder="Пароль" name="password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        @error('password_confirmation')
+                                        <div class="alert border-danger bg-transparent text-danger" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </div>
+                                        @enderror
+                                        <label class="form-label" for="userConfpassword">Підтвердження пароля:</label>
+                                        <input type="password" id="userConfpassword" class="form-control" name="password_confirmation" placeholder="Підтвердження пароля" required>
+                                    </div>
+                                    <div class="program-price">
+                                        <h3 class="text-center mb-3">Секретний пароль</h3>
+                                        <p class="text-center mb-3">Секретний пароль потрібний для підтвердження своїх дій в особистому кабінеті</p>
+                                        <div class="form-group">
+                                            @error('password')
+                                            <div class="alert border-danger bg-transparent text-danger" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </div>
+                                            @enderror
+                                            <label class="form-label" for="userSecretPassword">Секретний пароль:</label>
+                                            <input type="password" id="userSecretPassword" class="form-control" placeholder="Секретний пароль" name="secret" required>
+                                        </div>
+                                        <div class="form-group">
+                                            @error('password_confirmation')
+                                            <div class="alert border-danger bg-transparent text-danger" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </div>
+                                            @enderror
+                                            <label class="form-label" for="userConfSecretPassword">Підтвердження секретного пароля:</label>
+                                            <input type="password" id="userConfSecretPassword" class="form-control" name="secret_confirmation" placeholder="Підтвердження секретного пароля" required>
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4 ml-auto text-right">
+                                            <button id="js-login-btn" type="submit" class="btn btn-block btn-danger btn-lg mt-3">Реєстрація</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-@endsection
+
+<script src="{{asset('js/vendors.bundle.js')}}"></script>
+<script src="{{asset('js/app.bundle.js')}}"></script>
+</body>
+</html>
