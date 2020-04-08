@@ -1256,7 +1256,7 @@
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>&apos;qiNq9wrCnzorVTMUfbfyWZFmt8GHvuRaiQYZaGFDWvOqayhgo15lARznp2ppT9te&apos;</DefaultExpression>
+      <DefaultExpression>&apos;74SmlXSq98AkgEFGG6cHw050yefZLBOZ3tfvwkgosSalpJAvmg6NgANVuiKXss1u&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="308" parent="286" name="password">
@@ -1271,37 +1271,43 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="286" name="isActive">
+    <column id="310" parent="286" name="confirm_code">
       <Position>9</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="311" parent="286" name="isActive">
+      <Position>10</Position>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="311" parent="286" name="remember_token">
-      <Position>10</Position>
+    <column id="312" parent="286" name="remember_token">
+      <Position>11</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="312" parent="286" name="created_at">
-      <Position>11</Position>
-      <DataType>timestamp|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="313" parent="286" name="updated_at">
+    <column id="313" parent="286" name="created_at">
       <Position>12</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="314" parent="286" name="users_email_unique">
+    <column id="314" parent="286" name="updated_at">
+      <Position>13</Position>
+      <DataType>timestamp|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="315" parent="286" name="users_email_unique">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="315" parent="286" name="PRIMARY">
+    <key id="316" parent="286" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="316" parent="286" name="users_email_unique">
+    <key id="317" parent="286" name="users_email_unique">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>users_email_unique</UnderlyingIndexName>
     </key>

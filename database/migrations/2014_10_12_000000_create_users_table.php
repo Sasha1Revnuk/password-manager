@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('api_token')->default(\Illuminate\Support\Str::random(64));
             $table->string('password');
             $table->string('secret_password');
+            $table->string('confirm_code');
             $table->boolean('isActive')->nullable()->default(null);
             $table->rememberToken();
             $table->timestamps();

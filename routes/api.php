@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('auth:api')->group(function(){
+    Route::get('/change-password/{user}', 'UserController@changePasswordApi')->middleware(['checkUserId'])->name('changePasswordApi');
+    Route::get('/change-password-secret/{user}', 'UserController@changeSecretPasswordApi')->middleware(['checkUserId'])->name('changeSecretPasswordApi');
+
 });

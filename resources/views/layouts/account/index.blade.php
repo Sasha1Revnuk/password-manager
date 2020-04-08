@@ -91,7 +91,13 @@
                                 </div>
                             </div>
                             <div class="dropdown-divider m-0"></div>
-                            <a class="dropdown-item fw-500 pt-3 pb-3" href="/account/logout">
+                            <a class="dropdown-item fw-500 pt-3 pb-3"  data-toggle="modal" data-target="#change-password-modal" href="javascript:void(0);">
+                                <span data-i18n="drpdwn.page-logout">Змінити пароль</span>
+                            </a>
+                            <a class="dropdown-item fw-500 pt-3 pb-3" id="changeSecret" data-user="{{\Illuminate\Support\Facades\Auth::user()->id}}" href="javascript:void(0);">
+                                <span data-i18n="drpdwn.page-logout">Надіслати новий секретний пароль</span>
+                            </a>
+                            <a class="dropdown-item fw-500 pt-3 pb-3" href="/logout">
                                 <span data-i18n="drpdwn.page-logout">Вихід</span>
                             </a>
                         </div>
@@ -116,11 +122,7 @@
             <footer class="page-footer" role="contentinfo">
                 <div class="d-flex align-items-center flex-1 text-muted"></div>
                 <div>
-                    <ul class="list-table m-0">
-                        <li><a href="intel_introduction.html" class="text-secondary fw-700">About</a></li>
-                        <li class="pl-3"><a href="info_app_licensing.html" class="text-secondary fw-700">License</a></li>
-                        <li class="pl-3"><a href="info_app_docs.html" class="text-secondary fw-700">Documentation</a></li>
-                    </ul>
+
                 </div>
             </footer>
             <!-- END Page Footer -->
@@ -130,6 +132,39 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="change-password-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    Зміна пароля
+                </h4>
+                <button type="button" class="close" id="closeButton" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fal fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label" for="password">Пароль:</label>
+                    <input type="password" id="password" class="form-control" placeholder="Новий пароль" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="password_confirmation">Підтвердження пароля:</label>
+                    <input type="password" id="password_confirmation" class="form-control" name="password_confirmation" placeholder="Підтвердження нового пароля" required>
+                </div>
+                <hr />
+                <div class="form-group">
+                    <label class="form-label" for="secret">Секретний пароль</label>
+                    <input type="password" id="secret" class="form-control" name="secret" placeholder="Секретний пароль" required>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary waves-effect waves-themed" data-user="{{\Illuminate\Support\Facades\Auth::user()->id}}" id="changePassword">Змінити пароль</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- END Page Wrapper -->
 <!-- BEGIN Quick Menu -->
 <!-- to add more items, please make sure to change the variable '$menu-items: number;' in your _page-components-shortcut.scss -->
@@ -155,7 +190,7 @@
 <script src="{{asset('acc/js/formplugins/inputmask/inputmask.bundle.js')}}"></script>
 <script src="{{asset('acc/js/formplugins/select2/select2.bundle.js')}}"></script>
 <script src="{{asset('acc/js/formplugins/summernote/summernote.js')}}"></script>
-
+<script src="/acc/js/index.js"></script>
 @yield('scripts')
 
 <?php use Illuminate\Support\Facades\Auth;

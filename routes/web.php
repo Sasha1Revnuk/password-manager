@@ -23,7 +23,11 @@ Auth::routes([
     'verify' => false, // Email Verification Routes...
     ]);
 Route::get('/logout', 'Auth\LoginController@logout')->name('logoutAdmin');
+Route::get('/sendhtmlemail/{user}/','MailController@htmlEmail')->name('mailSender');
+Route::get('/confirm/{user}/{code}','MailController@confirm')->name('mailConfirm');
+Route::get('/confirm-success/','MailController@confirmSucces')->name('mailConfirmSuccess');
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/sendhtmlemail','MailController@htmlEmail')->name('mailSender');
+Route::middleware(['auth', 'adminActive'])->group(function() {
+    Route::get('/quick', 'IndexController@quick')->name('quick');
+});
 

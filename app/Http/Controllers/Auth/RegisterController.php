@@ -10,6 +10,7 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 
@@ -58,7 +59,6 @@ class RegisterController extends Controller
             'last_name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'secret' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
 
@@ -68,28 +68,56 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
+
+    private function checkSecret($secret)
+    {
+        $users = User::all();
+        foreach ($users as $user)
+        {
+            if(Hash::check($secret, $user->secret_password)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
     protected function create(array $data)
     {
         $token = Str::random(64);
-
-        return User::create([
+        $secret = Str::random(8);
+        while ($this->checkSecret($secret)) {
+            $secret = Str::random(8);
+        }
+        return [User::create([
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'secret_password' => Hash::make($data['secret']),
-            'is_active' => UserEnumerator::STATUS_ACTIVE,
+            'secret_password' => Hash::make($secret),
+            'is_active' => UserEnumerator::STATUS_UNACTIVE,
             'api_token' => $token,
-        ]);
+            'confirm_code' => Str::random(64),
+        ]), $secret];
     }
 
     public function register(Request $request)
     {
         $this->validator($request->all())->validate();
+        $user = $this->create($request->all());
+        event(new Registered($user[0]));
 
-        event(new Registered($user = $this->create($request->all())));
+        return $this->registered($request, $user[0])
+            ?: $this->successRegister($user[0], $user[1]);
+    }
 
-        return $this->registered($request, $user)
-            ?: redirect($this->redirectPath());
+    private function successRegister($user, $secret)
+    {
+        Mail::send('mailSecret', ['user' => $user, 'secret' => $secret], function($message) use ($user) {
+            $message->to($user->email, 'Секретний пароль')->subject
+            ('Секретний пароль');
+            $message->from('mcleinjohn06@gmail.com','Password Manager');
+        });
+
+        return redirect('/sendhtmlemail/' . $user->id . '?secret=1');
     }
 }

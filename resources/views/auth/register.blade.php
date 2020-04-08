@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>
-        Реэстрація | Password Manager
+        Реєстрація | Password Manager
     </title>
     <meta name="description" content="Login">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,11 +53,6 @@
                         </div>
                         <div class="col-xl-6 ml-auto mr-auto">
                             <div class="card p-4 rounded-plus bg-faded">
-                                @if($errors->any())
-                                    @foreach($errors->all() as $error)
-                                        @include('layouts.account.alerts.danger', ['alert' => $error])
-                                    @endforeach
-                                @endif
                                 <form id="js-login" method="POST" action="{{ route('register') }}">
                                     @csrf
                                     <div class="form-group row">
@@ -106,28 +101,28 @@
                                         <label class="form-label" for="userConfpassword">Підтвердження пароля:</label>
                                         <input type="password" id="userConfpassword" class="form-control" name="password_confirmation" placeholder="Підтвердження пароля" required>
                                     </div>
-                                    <div class="program-price">
-                                        <h3 class="text-center mb-3">Секретний пароль</h3>
-                                        <p class="text-center mb-3">Секретний пароль потрібний для підтвердження своїх дій в особистому кабінеті</p>
-                                        <div class="form-group">
-                                            @error('password')
-                                            <div class="alert border-danger bg-transparent text-danger" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </div>
-                                            @enderror
-                                            <label class="form-label" for="userSecretPassword">Секретний пароль:</label>
-                                            <input type="password" id="userSecretPassword" class="form-control" placeholder="Секретний пароль" name="secret" required>
-                                        </div>
-                                        <div class="form-group">
-                                            @error('password_confirmation')
-                                            <div class="alert border-danger bg-transparent text-danger" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </div>
-                                            @enderror
-                                            <label class="form-label" for="userConfSecretPassword">Підтвердження секретного пароля:</label>
-                                            <input type="password" id="userConfSecretPassword" class="form-control" name="secret_confirmation" placeholder="Підтвердження секретного пароля" required>
-                                        </div>
-                                    </div>
+                                    {{--<div class="program-price">--}}
+                                        {{--<h3 class="text-center mb-3">Секретний пароль</h3>--}}
+                                        {{--<p class="text-center mb-3">Секретний пароль потрібний для підтвердження своїх дій в особистому кабінеті</p>--}}
+                                        {{--<div class="form-group">--}}
+                                            {{--@error('password')--}}
+                                            {{--<div class="alert border-danger bg-transparent text-danger" role="alert">--}}
+                                                {{--<strong>{{ $message }}</strong>--}}
+                                            {{--</div>--}}
+                                            {{--@enderror--}}
+                                            {{--<label class="form-label" for="userSecretPassword">Секретний пароль:</label>--}}
+                                            {{--<input type="password" id="userSecretPassword" class="form-control" placeholder="Секретний пароль" name="secret" required>--}}
+                                        {{--</div>--}}
+                                        {{--<div class="form-group">--}}
+                                            {{--@error('password_confirmation')--}}
+                                            {{--<div class="alert border-danger bg-transparent text-danger" role="alert">--}}
+                                                {{--<strong>{{ $message }}</strong>--}}
+                                            {{--</div>--}}
+                                            {{--@enderror--}}
+                                            {{--<label class="form-label" for="userConfSecretPassword">Підтвердження секретного пароля:</label>--}}
+                                            {{--<input type="password" id="userConfSecretPassword" class="form-control" name="secret_confirmation" placeholder="Підтвердження секретного пароля" required>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
                                     <div class="row no-gutters">
                                         <div class="col-md-4 ml-auto text-right">
                                             <button id="js-login-btn" type="submit" class="btn btn-block btn-danger btn-lg mt-3">Реєстрація</button>
