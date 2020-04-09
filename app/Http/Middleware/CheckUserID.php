@@ -18,6 +18,7 @@ class CheckUserID
     public function handle($request, Closure $next)
     {
         $user = $request->route('user');
+
         if(!$user || $user->id != Auth::user()->id) {
             return abort(404);
         }

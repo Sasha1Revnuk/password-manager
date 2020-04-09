@@ -28,6 +28,15 @@ Route::get('/confirm/{user}/{code}','MailController@confirm')->name('mailConfirm
 Route::get('/confirm-success/','MailController@confirmSucces')->name('mailConfirmSuccess');
 
 Route::middleware(['auth', 'adminActive'])->group(function() {
-    Route::get('/quick', 'IndexController@quick')->name('quick');
+
+    Route::prefix('data/{user}')->middleware(['checkUserId'])->group(function() {
+        Route::get('/quick', 'IndexController@quick')->name('quick');
+
+        Route::prefix('webs')->group(function () {
+            Route::get('/', 'WebController@index')->name('webs');
+        });
+    });
+
+
 });
 

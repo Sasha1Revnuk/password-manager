@@ -44,7 +44,7 @@
                     <div class="row">
                         <div class="col col-md-6 col-lg-7 hidden-sm-down">
                             <h2 class="fs-xxl fw-500 mt-4 text-white">
-                                Password Manager - зручна система керування для оцінки та керування паролями
+                                Password Manager - зручна система для оцінки та керування паролями
                                 <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60">
                                     Керуйте комфортно та без переплат. Основна мета проекту - захистити ваші паролі. Пройдіть просту авторизацію та присупайте до роботи!
                                 </small>

@@ -17,5 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->group(function(){
     Route::get('/change-password/{user}', 'UserController@changePasswordApi')->middleware(['checkUserId'])->name('changePasswordApi');
     Route::get('/change-password-secret/{user}', 'UserController@changeSecretPasswordApi')->middleware(['checkUserId'])->name('changeSecretPasswordApi');
+    Route::prefix('data/{user}')->middleware(['checkUserId'])->group(function() {
+        Route::prefix('webs')->group(function () {
+            Route::get('/', 'WebController@getApi')->name('webs');
+        });
+    });
 
 });

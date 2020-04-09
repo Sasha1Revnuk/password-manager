@@ -6,8 +6,15 @@ $request = new \Illuminate\Http\Request();
         @include('layouts.account.panel-menu.simple', [
             'menuIcon' => 'fal fa-braille',
             'link' => 'quick',
-            'params' => [],
+            'params' => ['user' => \Illuminate\Support\Facades\Auth::id()],
             'title' => 'Швидкий доступ',
+        ])
+
+        @include('layouts.account.panel-menu.simple', [
+            'menuIcon' => 'fal fa-globe',
+            'link' => 'webs',
+            'params' => ['user' => \Illuminate\Support\Facades\Auth::id()],
+            'title' => 'Облікові записи Інтернету',
         ])
     </ul>
 </nav>
