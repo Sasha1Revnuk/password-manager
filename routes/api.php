@@ -20,6 +20,8 @@ Route::middleware('auth:api')->group(function(){
     Route::prefix('data/{user}')->middleware(['checkUserId'])->group(function() {
         Route::prefix('webs')->group(function () {
             Route::get('/', 'WebController@getApi')->name('webs');
+            Route::get('/generate-password', 'WebController@generatePasswordApi')->name('generatePasswordApi');
+            Route::get('/add', 'WebController@addWebApi')->name('addWebApi');
         });
     });
 

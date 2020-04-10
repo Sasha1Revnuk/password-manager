@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\PasswordService;
 use App\User;
 use App\Web;
 use App\WebGroup;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Ramsey\Collection\Collection;
 
 class WebController extends Controller
@@ -120,5 +122,43 @@ class WebController extends Controller
             'recordsFiltered' => $resourcesCount,
         ];
         return response()->json($responseData);
+    }
+
+    public function generatePasswordApi(User $user, Request $request)
+    {
+        $big = ((int)$request->get('big') ?: null);
+        $sym = ((int)$request->get('sym') ?: null);
+        $count = ((int)$request->get('count') ?: null);
+        $password = PasswordService::generate($big, $sym, $count);
+
+        return response()->json($password);
+    }
+
+    public function addWebApi(User $user, Request $request)
+    {
+//        $validator = Validator::make($request->all(), [
+//            'url' => ['required'],
+//            'login' => ['required'],
+//            'password' => ['required','min:8'],
+//        ]);
+
+
+//        if($validator->errors()->any()) {
+//            return response()->json(false);
+//        }
+
+        $url = parse_url($request->get('url'));
+
+        if ( !$url['path'] OR ! isset($url['scheme']))
+        {
+            $url = 'http://'.$url['path'];
+        } else {
+            $url = $request->get('url');
+        }
+
+        $name = parse_url($url)['host'] ?: parse_url($url)['path'];
+        $password =new PasswordService();
+        $password = $password->crypt($request->get('password'));
+        dd($password);
     }
 }

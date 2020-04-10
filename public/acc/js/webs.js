@@ -131,9 +131,70 @@ $(document).ready(function () {
       },
       headers: authHeaders
     }
-  }); // $('#url').on('keyup', function () {
-  //     table.ajax.reload();
-  // })
+  });
+  $('.changeTypePassword').on('click', function () {
+    if ($($(this).attr('data-input')).attr('type') == 'password') {
+      $($(this).attr('data-input')).attr('type', 'text');
+      $(this).attr('title', 'Приховати пароль');
+      $($(this).attr('data-i')).removeClass('fa-toggle-off');
+      $($(this).attr('data-i')).addClass('fa-toggle-on');
+    } else {
+      $($(this).attr('data-input')).attr('type', 'password');
+      $($(this).attr('data-i')).removeClass('fa-toggle-on');
+      $($(this).attr('data-i')).addClass('fa-toggle-off');
+      $(this).attr('title', 'Показати пароль');
+    }
+  });
+  $('#url').on('focus', function () {
+    $(this).attr('readonly', true);
+    $(this).removeAttr('readonly');
+  });
+  $('#url').focusout(function () {
+    $(this).attr('readonly');
+    $(this).removeAttr('readonly');
+  });
+  $('#url').keyup($.debounce(250, function (e) {
+    table.ajax.reload();
+  }));
+  $('#generatePassword').click(function () {
+    $.ajax({
+      type: 'GET',
+      url: '/api/data/' + $('#webs').attr('data-user') + '/webs/generate-password',
+      headers: authHeaders,
+      data: {
+        big: function big() {
+          return $('#bigLetters').is(':checked') ? 1 : 0;
+        },
+        sym: function sym() {
+          return $('#symbols').is(':checked') ? 1 : 0;
+        },
+        count: function count() {
+          return $('#passwordLength').val();
+        }
+      }
+    }).then(function (response) {
+      $('#passwordModalAdd').val('');
+      $('#passwordModalAdd').val(response);
+    });
+  });
+  $('#addToModal').click(function () {
+    $.ajax({
+      type: 'GET',
+      url: '/api/data/' + $('#webs').attr('data-user') + '/webs/add',
+      headers: authHeaders,
+      data: {
+        url: function url() {
+          return $('#urlModalAdd').val();
+        },
+        login: function login() {
+          return $('#loginModalAdd').val();
+        },
+        password: function password() {
+          return $('#passwordModalAdd').val();
+        }
+      }
+    }).then(function (response) {});
+  });
 });
 
 /***/ }),
