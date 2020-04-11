@@ -1,37 +1,4 @@
 $(document).ready(function () {
-    function resetData() {
-         $('#passstrength').removeClass();
-         $("#addModalForm").trigger("reset");
-        $('#passstrengthPolosa').css("width", "0%")
-         $('#passstrengthPolosa').attr('aria-valuenow', '0');
-        $('#passstrengthSpan').html(' ');
-    }
-   let table = $('#webs').DataTable( {
-        processing: true,
-        serverSide: true,
-        lengthMenu: [ 10, 25, 50],
-        searching: false,
-        ordering: false,
-        language: {
-            "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Ukrainian.json"
-        },
-        responsive: true,
-        columns: [
-            { name: "fa", className: "table-text-align-center", width: "5%" },
-            { name: "site", className: "table-text-align-center", width: "50%" },
-            { name: "login", className: "table-text-align-center", width: "20%" },
-            { name: "actions", className: "table-text-align-center", width: "25%"},
-        ],
-        ajax: {
-            url:'/api/data/' + $('#webs').attr('data-user') + '/webs',
-            type: "GET",
-            data: {
-                url: function () {return $('#url').val()},
-            },
-            headers: authHeaders
-        },
-    } );
-
    //Показати або сховати пароль при доаванні чи редагуванні
     $('.changeTypePassword').on('click', function (event) {
         event.preventDefault();
@@ -54,14 +21,6 @@ $(document).ready(function () {
         $(this).removeAttr('readonly')
     })
 
-    $('#url').focusout( function () {
-        $(this).attr('readonly');
-        $(this).removeAttr('readonly')
-    })
-    $('#url').keyup($.debounce(250, function(e) {
-        table.ajax.reload();
-    }));
-
     //Генерація пароля
     $('.generatePassword').click(function () {
         event.preventDefault();
@@ -81,28 +40,6 @@ $(document).ready(function () {
         })
     })
     //Додавання пароля
-    $('#addToModal').click(function () {
-        event.preventDefault();
-        $.ajax({
-            type: 'GET',
-            url: '/api/data/' + $('#webs').attr('data-user') + '/webs/add',
-            headers: authHeaders,
-            data: {
-                url: function () {return $('#urlModalAdd').val()},
-                login: function () {return $('#loginModalAdd').val()},
-                password: function () {return $('#passwordModalAdd').val()},
-            },
-        }).then((response) => {
-            if(response == true) {
-                $('.closeModal').click()
-                table.ajax.reload();
-            }
-        })
-    })
-
-    $('.closeModal').click(function () {
-        resetData()
-    })
 
 
     $('#passwordModalAdd').on('keyup focus', function () {

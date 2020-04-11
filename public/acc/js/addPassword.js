@@ -81,66 +81,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/webs.js":
-/*!******************************!*\
-  !*** ./resources/js/webs.js ***!
-  \******************************/
+/***/ "./resources/js/addPassword.js":
+/*!*************************************!*\
+  !*** ./resources/js/addPassword.js ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  function resetData() {
-    $('#passstrength').removeClass();
-    $("#addModalForm").trigger("reset");
-    $('#passstrengthPolosa').css("width", "0%");
-    $('#passstrengthPolosa').attr('aria-valuenow', '0');
-    $('#passstrengthSpan').html(' ');
-  }
-
-  var table = $('#webs').DataTable({
-    processing: true,
-    serverSide: true,
-    lengthMenu: [10, 25, 50],
-    searching: false,
-    ordering: false,
-    language: {
-      "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Ukrainian.json"
-    },
-    responsive: true,
-    columns: [{
-      name: "fa",
-      className: "table-text-align-center",
-      width: "5%"
-    }, {
-      name: "site",
-      className: "table-text-align-center",
-      width: "50%"
-    }, {
-      name: "login",
-      className: "table-text-align-center",
-      width: "20%"
-    }, {
-      name: "actions",
-      className: "table-text-align-center",
-      width: "25%"
-    }],
-    ajax: {
-      url: '/api/data/' + $('#webs').attr('data-user') + '/webs',
-      type: "GET",
-      data: {
-        url: function url() {
-          return $('#url').val();
-        }
-      },
-      headers: authHeaders
-    }
-  }); //Показати або сховати пароль при доаванні чи редагуванні
-
+  //Показати або сховати пароль при доаванні чи редагуванні
   $('.changeTypePassword').on('click', function (event) {
     event.preventDefault();
 
@@ -159,14 +113,7 @@ $(document).ready(function () {
   $('#url').on('focus', function () {
     $(this).attr('readonly', true);
     $(this).removeAttr('readonly');
-  });
-  $('#url').focusout(function () {
-    $(this).attr('readonly');
-    $(this).removeAttr('readonly');
-  });
-  $('#url').keyup($.debounce(250, function (e) {
-    table.ajax.reload();
-  })); //Генерація пароля
+  }); //Генерація пароля
 
   $('.generatePassword').click(function () {
     event.preventDefault();
@@ -192,33 +139,6 @@ $(document).ready(function () {
     });
   }); //Додавання пароля
 
-  $('#addToModal').click(function () {
-    event.preventDefault();
-    $.ajax({
-      type: 'GET',
-      url: '/api/data/' + $('#webs').attr('data-user') + '/webs/add',
-      headers: authHeaders,
-      data: {
-        url: function url() {
-          return $('#urlModalAdd').val();
-        },
-        login: function login() {
-          return $('#loginModalAdd').val();
-        },
-        password: function password() {
-          return $('#passwordModalAdd').val();
-        }
-      }
-    }).then(function (response) {
-      if (response == true) {
-        $('.closeModal').click();
-        table.ajax.reload();
-      }
-    });
-  });
-  $('.closeModal').click(function () {
-    resetData();
-  });
   $('#passwordModalAdd').on('keyup focus', function () {
     var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
     var mediumRegex = new RegExp("^(?=.{8,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
@@ -260,14 +180,14 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ 1:
-/*!*********************************!*\
-  !*** multi ./resources/js/webs ***!
-  \*********************************/
+/***/ 2:
+/*!****************************************!*\
+  !*** multi ./resources/js/addPassword ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\Учеба\password-manager\resources\js\webs */"./resources/js/webs.js");
+module.exports = __webpack_require__(/*! E:\Учеба\password-manager\resources\js\addPassword */"./resources/js/addPassword.js");
 
 
 /***/ })

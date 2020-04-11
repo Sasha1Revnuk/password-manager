@@ -88,10 +88,20 @@ class RegisterController extends Controller
         while ($this->checkSecret($secret)) {
             $secret = Str::random(8);
         }
+
+        $emailIdArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+        shuffle($emailIdArray);
+        $emailId = '';
+        for($i = 0; $i < 32; $i++) {
+            $emailId .= $emailIdArray[mt_rand(0, count($emailIdArray)-1)];
+        }
+
+        $emailId = str_shuffle($emailId);
         return [User::create([
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
             'email' => $data['email'],
+            'email_id' => $emailId,
             'password' => Hash::make($data['password']),
             'secret_password' => Hash::make($secret),
             'is_active' => UserEnumerator::STATUS_UNACTIVE,

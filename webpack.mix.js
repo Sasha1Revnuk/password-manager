@@ -13,3 +13,4 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/index', 'public/acc/js').version()
 mix.js('resources/js/webs', 'public/acc/js').version()
+mix.js('resources/js/addPassword', 'public/acc/js').version()

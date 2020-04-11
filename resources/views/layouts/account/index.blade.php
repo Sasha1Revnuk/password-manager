@@ -26,6 +26,7 @@
     <link rel="stylesheet" media="screen, print"href="{{asset('acc/css/formplugins/bootstrap-datepicker/bootstrap-datepicker.css')}}">
     <link rel="stylesheet" href="{{asset('acc/css/notifications/sweetalert2/sweetalert2.bundle.css')}}">
     <link rel="stylesheet" href="{{asset('acc/css/bootstrap-clockpicker.min.css')}}">
+    <link rel="stylesheet" href="{{asset('acc/css/jquery-entropizer.css')}}">
     <link rel="stylesheet" media="screen, print" href="{{asset('acc/css/formplugins/select2/select2.bundle.css')}}">
     <link rel="stylesheet" media="screen, print" href="{{asset('acc/css/formplugins/summernote/summernote.css')}}">
 
@@ -190,6 +191,8 @@
 <script src="{{asset('acc/js/formplugins/inputmask/inputmask.bundle.js')}}"></script>
 <script src="{{asset('acc/js/formplugins/select2/select2.bundle.js')}}"></script>
 <script src="{{asset('acc/js/formplugins/summernote/summernote.js')}}"></script>
+<script src="{{asset('acc/js/entropizer.js')}}"></script>
+<script src="{{asset('acc/js/jquery-entropizer.js')}}"></script>
 <script src="/acc/js/index.js"></script>
 @yield('scripts')
 
