@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Enumerators\UserEnumerator;
 use App\Services\PasswordService;
 use App\User;
 use App\Web;
@@ -9,6 +10,7 @@ use App\WebGroup;
 use App\WebResource;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Ramsey\Collection\Collection;
 
@@ -67,8 +69,6 @@ class WebController extends Controller
                                                     </a><div class="btn-group" role="group">
                                                     <button type="button" class="btn btn-primary dropdown-toggle waves-effect waves-themed" data-toggle="dropdown" aria-expanded="false">Дії</button>
                                                     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: top, left; top: 35px; left: 0px;">
-                                                        <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Редагувати</a>
-                                                        <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Переглянути</a>
                                                         <a class="dropdown-item" href="'. route('addFormResource', ['user'=>Auth::id(), 'web' =>$resource->id ]).'" data-id="' . $resource->id . '">Додати обліковий запис</a>
                                                         <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Додати в швидкий доступ</a>
                                                         <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Видалити</a>
@@ -84,7 +84,6 @@ class WebController extends Controller
                                                     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: top, left; top: 35px; left: 0px;">
                                                         <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Редагувати</a>
                                                         <a class="dropdown-item" href="'. route('addFormResource', ['user'=>Auth::id(), 'web' =>$resource->id ]).'" data-id="' . $resource->id . '">Додати обліковий запис</a>
-                                                        <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Переглянути</a>
                                                         <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Скопіювати пароль</a>
                                                         <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Додати в швидкий доступ</a>
                                                         <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Видалити</a>
@@ -138,11 +137,21 @@ class WebController extends Controller
 
     public function addWebApi(User $user, Request $request, WebGroup $group=null)
     {
-        $validator = Validator::make($request->all(), [
-            'url' => ['required'],
-            'login' => ['required'],
-            'password' => ['required','min:8'],
-        ]);
+        if((int)$request->get('shifr') === UserEnumerator::METHOD_SECRET) {
+            $validator = Validator::make($request->all(), [
+                'url' => ['required'],
+                'login' => ['required'],
+                'password' => ['required','min:8'],
+                'secret' => ['required','min:8'],
+            ]);
+        } else {
+            $validator = Validator::make($request->all(), [
+                'url' => ['required'],
+                'login' => ['required'],
+                'password' => ['required','min:8'],
+            ]);
+        }
+
 
         if($validator->errors()->any()) {
             return response()->json(false);
@@ -157,25 +166,39 @@ class WebController extends Controller
             $url = $request->get('url');
         }
 
-        $name = parse_url($url)['host'] ?: parse_url($url)['path'];
-        $password =new PasswordService();
-        $password = $password->encrypt($request->get('password'));
 
+        $name = parse_url($url)['host'] ?: parse_url($url)['path'];
         $web = new Web();
         $web->name = $name;
         $web->url = $request->get('url');
         $web->user_id = Auth::id();
-
         if($group) {
             $web->web_group_id = (int)$group;
         }
-
         $web->save();
 
         $resource = new WebResource();
+        if((int)$request->get('shifr') === UserEnumerator::METHOD_SECRET) {
+            //dd(Auth::user()->secret_password    );
+            if(Hash::check($request->get('secret'), Auth::user()->secret_password)) {
+                $password =new PasswordService();
+                $password = $password->encrypt($request->get('password'), $request->get('secret'));
+                $resource->method = UserEnumerator::METHOD_SECRET;
+
+            } else {
+                return response()->json(false);
+            }
+        } else {
+            $password =new PasswordService();
+            $password = $password->encrypt($request->get('password'), Auth::user()->email_id);
+            $resource->method = UserEnumerator::METHOD_KEY;
+
+        }
+
         $resource->login = $request->get('login');
         $resource->password = $password;
         $resource->web_id = $web->id;
+        $resource->user_id = Auth::id();
         $resource->save();
 
         return response()->json(true);

@@ -97,7 +97,7 @@ $(document).ready(function () {
   $('#changePassword').on('click', function () {
     $.ajax({
       type: 'GET',
-      url: 'api/change-password/' + $(this).attr('data-user'),
+      url: '/api/change-password/' + $(this).attr('data-user'),
       headers: authHeaders,
       data: {
         password: function password() {
@@ -136,18 +136,33 @@ $(document).ready(function () {
     });
   });
   $('#changeSecret').on('click', function () {
-    $.ajax({
-      type: 'GET',
-      url: 'api/change-password-secret/' + $(this).attr('data-user'),
-      headers: authHeaders
-    }).then(function (response) {
-      if (response == true) {
-        Swal.fire({
-          title: 'Секретний пароль змінено',
-          text: 'Ви успішно змінили секретний пароль. Перевірте свою поштову скриньку.',
-          type: 'info',
-          confirmButtonColor: '#22688b',
-          confirmButtonText: 'OK'
+    var _this = this;
+
+    Swal.fire({
+      title: 'Ви впевнені?',
+      text: 'Ви збираєтесь змінити секретний пароль. Всі облікові записи, додані за допомогою попереднього секретного пароля, будуть знищені. Продовжити?',
+      type: 'question',
+      showCancelButton: true,
+      confirmButtonColor: '#8b4d04',
+      cancelButtonColor: '#1b960c',
+      confirmButtonText: 'Так, змінити і видалити!',
+      cancelButtonText: 'Ні, я згадаю свій секретний пароль!'
+    }).then(function (result) {
+      if (result.value) {
+        $.ajax({
+          type: 'GET',
+          url: '/api/change-password-secret/' + $(_this).attr('data-user'),
+          headers: authHeaders
+        }).then(function (response) {
+          if (response == true) {
+            Swal.fire({
+              title: 'Секретний пароль змінено',
+              text: 'Ви успішно змінили секретний пароль. Перевірте свою поштову скриньку.',
+              type: 'info',
+              confirmButtonColor: '#22688b',
+              confirmButtonText: 'OK'
+            });
+          }
         });
       } else {
         Swal.fire({
@@ -159,6 +174,7 @@ $(document).ready(function () {
         });
       }
     });
+    return false;
   });
 });
 

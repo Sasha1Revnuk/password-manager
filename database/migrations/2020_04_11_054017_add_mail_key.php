@@ -13,9 +13,11 @@ class AddMailKey extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('email_id')->after('email');
-        });
+        if (!Schema::hasColumn('users', 'email_id')) {
+            Schema::table('users', function (Blueprint $table) {
+                $table->string('email_id')->after('email');
+            });
+        }
     }
 
     /**
@@ -25,8 +27,10 @@ class AddMailKey extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('email_id');
-        });
+        if (Schema::hasColumn('users', 'email_id')) {
+            Schema::table('users', function (Blueprint $table) {
+                $table->dropColumn('email_id');
+            });
+        }
     }
 }

@@ -194,6 +194,7 @@ $(document).ready(function () {
 
   $('#addToModal').click(function () {
     event.preventDefault();
+    console.log($('#secretPasswordModalAdd').val());
     $.ajax({
       type: 'GET',
       url: '/api/data/' + $('#webs').attr('data-user') + '/webs/add',
@@ -207,6 +208,12 @@ $(document).ready(function () {
         },
         password: function password() {
           return $('#passwordModalAdd').val();
+        },
+        shifr: function shifr() {
+          return $("input[name='shifr']:checked").val();
+        },
+        secret: function secret() {
+          return $('#secretPasswordModalAdd').val();
         }
       }
     }).then(function (response) {

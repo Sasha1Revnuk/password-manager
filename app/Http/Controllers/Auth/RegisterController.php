@@ -84,9 +84,11 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         $token = Str::random(64);
-        $secret = Str::random(8);
-        while ($this->checkSecret($secret)) {
-            $secret = Str::random(8);
+        $secretArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+        shuffle($secretArray);
+        $secret = '';
+        for($i = 0; $i < 8; $i++) {
+            $secret .= $secretArray[mt_rand(0, count($secretArray)-1)];
         }
 
         $emailIdArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];

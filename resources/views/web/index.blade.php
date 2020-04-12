@@ -121,7 +121,57 @@
                                 {{--<div class="alert" id="passstrength" role="alert">--}}
                                 {{--</div>--}}
                             </div>
+                        <hr />
+                        <div class="row mb-4">
+                            <div class="col-lg-12 text-center">
+                                <h3>Метод шифрування</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <div class="frame-wrap">
+                                    <ul class="nav nav-pills nav-justified" role="tablist">
+
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="pill" href="#nav_pills_default-1">Секретним паролем</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#nav_pills_default-2">Системно (без пароля)</a>
+                                        </li>
+
+                                    </ul>
+                                    <div class="tab-content py-3 text-left ">
+                                        <div class="tab-pane fade show active" id="nav_pills_default-1" role="tabpanel">
+                                            <p>Безпечний метод</p>
+                                            <p>Для зашифрування та розшифрування паролей потрібно ввести секретний пароль</p>
+                                            <p><strong>Увага!</strong> При втраті і відновленні секретного пароля, всі облікові записи, що були зашифровані цим паролем, будуть знищені</p>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" value="1" id="secret" name="shifr">
+                                                <label class="custom-control-label" for="secret">Вибрати</label>
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <input id="secretPasswordModalAdd" type="password" class="form-control passwordModalAdd" placeholder="Секретний пароль" aria-label="Секретний пароль">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav_pills_default-2" role="tabpanel">
+                                            <p>Відповідальність за безпеку лежить виключно на Вас</p>
+                                            <p>Для зашифрування та розшифрування паролей не потрібно вводити секретний пароль. Дані будуть зашифровані системними ресурсами</p>
+                                            <p><strong>Увага!</strong> При успішному викрадені бази даних зловмисниками, ключ до розшифрування облікових записів буде також у зловмисників</p>
+                                            <p>100% -ва безпека не гарантована!</p>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" value="2" id="system" name="</label>" >
+                                                <label class="custom-control-label" for="system">Вибрати</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
                     </form>
+
+
                     </div>
                 </div>
                 <div class="modal-footer">

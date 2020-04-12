@@ -33,9 +33,11 @@ class UserController extends Controller
 
     public function changeSecretPasswordApi(Request $request, User $user)
     {
-        $secret = Str::random(8);
-        while ($this->checkSecret($secret)) {
-            $secret = Str::random(8);
+        $secretArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+        shuffle($secretArray);
+        $secret = '';
+        for($i = 0; $i < 8; $i++) {
+            $secret .= $secretArray[mt_rand(0, count($secretArray)-1)];
         }
         $user->secret_password = Hash::make($secret);
         $user->save();
@@ -44,6 +46,17 @@ class UserController extends Controller
             ('Секретний пароль');
             $message->from('mcleinjohn06@gmail.com','Password Manager');
         });
+
+
+        $webResources = $user->webResources()->secret()->get();
+        foreach ($webResources as $resource){
+            $resource->delete();
+        }
+
+        $webs = $user->webs()->doesntHave('resources')->get();
+        foreach ($webs as $web) {
+            $web->delete();
+        }
 
         return response()->json(true);
     }

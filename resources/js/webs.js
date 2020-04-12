@@ -83,6 +83,7 @@ $(document).ready(function () {
     //Додавання пароля
     $('#addToModal').click(function () {
         event.preventDefault();
+        console.log($('#secretPasswordModalAdd').val());
         $.ajax({
             type: 'GET',
             url: '/api/data/' + $('#webs').attr('data-user') + '/webs/add',
@@ -91,6 +92,9 @@ $(document).ready(function () {
                 url: function () {return $('#urlModalAdd').val()},
                 login: function () {return $('#loginModalAdd').val()},
                 password: function () {return $('#passwordModalAdd').val()},
+                shifr: function () {return  $("input[name='shifr']:checked").val()},
+                secret: function () {return $('#secretPasswordModalAdd').val()},
+
             },
         }).then((response) => {
             if(response == true) {

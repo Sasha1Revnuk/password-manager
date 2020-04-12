@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'first_name', 'email', 'password', 'last_name', 'secret_password','confirm_code', 'email_id'
+        'first_name', 'email', 'password', 'last_name', 'secret_password','confirm_code', 'email_id',
     ];
 
     protected $appends = [
@@ -54,5 +54,10 @@ class User extends Authenticatable
     public function webs()
     {
         return $this->hasMany(Web::class);
+    }
+
+    public function webResources()
+    {
+        return $this->hasMany(WebResource::class);
     }
 }

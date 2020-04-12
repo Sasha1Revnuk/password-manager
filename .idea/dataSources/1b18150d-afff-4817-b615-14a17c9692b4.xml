@@ -1271,7 +1271,7 @@
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>&apos;74SmlXSq98AkgEFGG6cHw050yefZLBOZ3tfvwkgosSalpJAvmg6NgANVuiKXss1u&apos;</DefaultExpression>
+      <DefaultExpression>&apos;gphUFtpGi18BgQDGL0AZVxEAaPrQQtNUtQipeH6f3cw0XyZVY8rRRU6yxucVdXTQ&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="312" parent="286" name="password">
@@ -1406,82 +1406,106 @@
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="336" parent="288" name="web_resources_web_id_foreign">
+    <column id="336" parent="288" name="method">
+      <Position>7</Position>
+      <DataType>smallint(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;2&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="337" parent="288" name="user_id">
+      <Position>8</Position>
+      <DataType>bigint(20) unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="338" parent="288" name="web_resources_web_id_foreign">
       <ColNames>web_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="337" parent="288" name="PRIMARY">
+    <index id="339" parent="288" name="web_resources_user_id_foreign">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="340" parent="288" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="338" parent="288" name="web_resources_web_id_foreign">
+    <foreign-key id="341" parent="288" name="web_resources_web_id_foreign">
       <ColNames>web_id</ColNames>
       <RefSchemaName>password_manager_db</RefSchemaName>
       <RefTableName>webs</RefTableName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="339" parent="289" name="id">
-      <Position>1</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="340" parent="289" name="name">
-      <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="341" parent="289" name="url">
-      <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="342" parent="289" name="user_id">
-      <Position>4</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="343" parent="289" name="web_group_id">
-      <Position>5</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="344" parent="289" name="created_at">
-      <Position>6</Position>
-      <DataType>timestamp|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="345" parent="289" name="updated_at">
-      <Position>7</Position>
-      <DataType>timestamp|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="346" parent="289" name="webs_user_id_foreign">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="347" parent="289" name="webs_web_group_id_foreign">
-      <ColNames>web_group_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="348" parent="289" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="349" parent="289" name="webs_user_id_foreign">
+    <foreign-key id="342" parent="288" name="web_resources_user_id_foreign">
       <ColNames>user_id</ColNames>
       <RefSchemaName>password_manager_db</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="350" parent="289" name="webs_web_group_id_foreign">
+    <column id="343" parent="289" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20) unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="344" parent="289" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="345" parent="289" name="url">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="346" parent="289" name="user_id">
+      <Position>4</Position>
+      <DataType>bigint(20) unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="347" parent="289" name="web_group_id">
+      <Position>5</Position>
+      <DataType>bigint(20) unsigned|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="348" parent="289" name="created_at">
+      <Position>6</Position>
+      <DataType>timestamp|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="349" parent="289" name="updated_at">
+      <Position>7</Position>
+      <DataType>timestamp|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="350" parent="289" name="webs_user_id_foreign">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="351" parent="289" name="webs_web_group_id_foreign">
+      <ColNames>web_group_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="352" parent="289" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="353" parent="289" name="webs_user_id_foreign">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>password_manager_db</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="354" parent="289" name="webs_web_group_id_foreign">
       <ColNames>web_group_id</ColNames>
       <RefSchemaName>password_manager_db</RefSchemaName>
       <RefTableName>web_groups</RefTableName>

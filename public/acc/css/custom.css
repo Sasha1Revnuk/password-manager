@@ -186,3 +186,10 @@
 .panel-header > :first-child {
     padding-left: 1rem;
 }
+
+.centeredLi {
+    display:inline-block;
+    *display:inline; /*IE7*/
+    *zoom:1; /*IE7*/
+    margin-right:10px;
+}

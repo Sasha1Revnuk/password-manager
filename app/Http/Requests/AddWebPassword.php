@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Enumerators\UserEnumerator;
 use App\Rules\CheckAbonementPromotionSingle;
 use App\Rules\CheckCoachForSection;
 use App\Rules\CheckCoachSingle;
@@ -38,7 +39,12 @@ class AddWebPassword extends FormRequest
         $rules = [
             'login' => ['required', new CheckUniqueLoginForWebResource(request('web'), request('user'))],
             'password' => ['required','min:8'],
+            'shifr' => ['required'],
         ];
+
+        if((int)$request->get('shifr') === UserEnumerator::METHOD_SECRET) {
+            $rules['secret'] = ['required','min:8'];
+        }
 
         return $rules;
     }

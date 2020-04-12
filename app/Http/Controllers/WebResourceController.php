@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Enumerators\UserEnumerator;
 use App\Http\Requests\AddWebPassword;
 use App\Services\PasswordService;
 use App\User;
 use App\Web;
 use App\WebResource;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
 class WebResourceController extends Controller
@@ -30,14 +33,25 @@ class WebResourceController extends Controller
     }
     public function add(User $user, Web $web, AddWebPassword $request)
     {
-
-        $password =new PasswordService();
-        $password = $password->encrypt($request->get('password'));
-
         $resource = new WebResource();
+        if((int)$request->get('shifr') === UserEnumerator::METHOD_SECRET) {
+            if(Hash::check($request->get('secret'), Auth::user()->secret_password)) {
+                $password =new PasswordService();
+                $password = $password->encrypt($request->get('password'), $request->get('secret'));
+                $resource->method = UserEnumerator::METHOD_SECRET;
+            } else {
+                return redirect()->back();
+            }
+        } else {
+            $password =new PasswordService();
+            $password = $password->encrypt($request->get('password'), Auth::user()->email_id);
+            $resource->method = UserEnumerator::METHOD_KEY;
+        }
+
         $resource->login = $request->get('login');
         $resource->password = $password;
         $resource->web_id = $web->id;
+        $resource->user_id = Auth::id();
         $resource->save();
 
         return redirect()->route('webs', ['user' => $user->id]);

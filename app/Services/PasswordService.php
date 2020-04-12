@@ -89,9 +89,9 @@ class PasswordService
     }
 
 
-    public function encrypt($data)
+    public function encrypt($data, $userKey)
     {
-        $key = pack('H*', Auth::user()->email_id);
+        $key = pack('H*', $userKey);
         $method = 'aes-256-ecb';
         $ivSize = openssl_cipher_iv_length($method);
         $iv = openssl_random_pseudo_bytes($ivSize);
@@ -100,9 +100,9 @@ class PasswordService
         return $encrypted;
     }
 
-    public function decrypt($data)
+    public function decrypt($data, $userKey)
     {
-        $key = pack('H*', Auth::user()->email_id);
+        $key = pack('H*', $userKey);
         $method = 'aes-256-ecb';
         $data = pack('H*', $data);
         $ivSize = openssl_cipher_iv_length($method);
