@@ -36,7 +36,8 @@ Route::middleware(['auth', 'adminActive'])->group(function() {
             Route::get('/', 'WebController@index')->name('webs');
             Route::get('/add-resource/{web}', 'WebResourceController@addForm')->middleware('checkWebForUser')->name('addFormResource');
             Route::post('/add-resource/{web}', 'WebResourceController@add')->middleware('checkWebForUser')->name('addResource');
-
+            Route::get('/edit-resource-system/{resource}', 'WebResourceController@editSystemForm')->middleware('checkWebResourceForUser')->name('editSystemResourceForm');
+//            Route::post('/add-resource/{web}', 'WebResourceController@add')->middleware('checkWebForUser')->name('addResource');
         });
     });
 

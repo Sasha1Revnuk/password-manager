@@ -82,7 +82,7 @@ class WebController extends Controller
                                                     </a><div class="btn-group" role="group">
                                                     <button type="button" class="btn btn-primary dropdown-toggle waves-effect waves-themed" data-toggle="dropdown" aria-expanded="false">Дії</button>
                                                     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: top, left; top: 35px; left: 0px;">
-                                                        <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Редагувати</a>
+                                                        <a class="dropdown-item" href="'. route('editSystemResourceForm', ['user'=>Auth::id(), 'resource' =>$resource->resources()->first()->id ]).'" data-id="' . $resource->id . '">Редагувати</a>
                                                         <a class="dropdown-item" href="'. route('addFormResource', ['user'=>Auth::id(), 'web' =>$resource->id ]).'" data-id="' . $resource->id . '">Додати обліковий запис</a>
                                                         <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Скопіювати пароль</a>
                                                         <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Додати в швидкий доступ</a>

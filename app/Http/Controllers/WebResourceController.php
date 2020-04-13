@@ -56,4 +56,31 @@ class WebResourceController extends Controller
 
         return redirect()->route('webs', ['user' => $user->id]);
     }
+
+    public function editSystemForm(User $user, WebResource $resource)
+    {
+        $password = '';
+        if($resource->method === UserEnumerator::METHOD_SECRET) {
+            for($i = 0; $i < strlen($resource->password); $i++) {
+                $password .= '*';
+            }
+        } else {
+            $passwordService = new PasswordService();
+            $password = $passwordService->decrypt($resource->password, Auth::user()->email_id);
+        }
+        $data = [
+            'meta' => [
+                'pageTitle' => 'Редагувати обліковий запис',
+            ],
+            'breadcrumb' => [
+                'Облікові записи інтернету' => route('webs', ['user' => $user->id]),
+                'Додати обліковий запис '=> ''
+            ],
+            'user' => $user,
+            'resource' => $resource,
+            'password' => $password
+
+        ];
+        return view('web.editResource', $data);
+    }
 }
