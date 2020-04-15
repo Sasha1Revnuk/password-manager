@@ -1,5 +1,5 @@
 $(document).ready(function () {
-   //Показати або сховати пароль при доаванні чи редагуванні
+   //Показати або сховати пароль при додаванні чи редагуванні
     $('.changeTypePassword').on('click', function (event) {
         event.preventDefault();
         if($($(this).attr('data-input')).attr('type') == 'password') {
@@ -16,6 +16,74 @@ $(document).ready(function () {
 
         }
     })
+
+    $('.changeTypeMyPassword').on('click', function (event) {
+        event.preventDefault();
+        if($($(this).attr('data-input')).attr('type') == 'password') {
+            if($(this).attr('data-method') == 1) {
+                Swal.fire({
+                    title: 'Введіть секретний пароль',
+                    input: 'password',
+
+                    showCancelButton: true,
+                    confirmButtonText: 'Подивитись пароль',
+                    cancelButtonText: 'Відмінити',
+                    showLoaderOnConfirm: false,
+                    preConfirm: (secret) => {
+                        return secret;
+
+                    },
+                    allowOutsideClick: () => !Swal.isLoading()
+                }).then((result) => {
+                    if (result.value) {
+                        $.ajax({
+                            type: 'GET',
+                            url: '/api/data/' + $('#webs').attr('data-user') + '/webs/getSavePassword/'+ $("#changeTypeMyPassword").attr('data-id'),
+                            headers: authHeaders,
+                            data: {
+                                'secret': result.value
+                            },
+                        }).then((response) => {
+                            if(response) {
+                                $($(this).attr('data-input')).attr('type', 'text');
+                                $(this).attr('title', 'Приховати пароль');
+                                $($(this).attr('data-i')).removeClass('fa-toggle-off');
+                                $($(this).attr('data-i')).addClass('fa-toggle-on');
+                                $($(this).attr('data-input')).val(response);
+                            } else {
+                                Swal.fire({
+                                    type: 'error',
+                                    title: `Помилка. Спробуйте ще раз`,
+
+                                })
+                            }
+
+                        })
+                    }  else {
+                        Swal.fire({
+                            type: 'error',
+                            title: `Помилка. Спробуйте ще раз`,
+
+                        })
+                    }
+                })
+            } else {
+                $($(this).attr('data-input')).attr('type', 'text');
+                $(this).attr('title', 'Приховати пароль');
+                $($(this).attr('data-i')).removeClass('fa-toggle-off');
+                $($(this).attr('data-i')).addClass('fa-toggle-on');
+            }
+
+        } else {
+            $($(this).attr('data-input')).attr('type', 'password');
+            $($(this).attr('data-i')).removeClass('fa-toggle-on');
+            $($(this).attr('data-i')).addClass('fa-toggle-off');
+            $(this).attr('title', 'Показати пароль');
+
+        }
+    })
+
+
     $('#url').on('focus', function () {
         $(this).attr('readonly', true);
         $(this).removeAttr('readonly')
@@ -34,9 +102,9 @@ $(document).ready(function () {
                 count: function () {return $('.passwordLength').val()},
             },
         }).then((response) => {
-            $('.passwordModalEdit').focus();
+             $('.passwordModalEdit').focus();
             $('.passwordModalEdit').val(response);
-            $('.passwordModalEdit').blur();
+             $('.passwordModalEdit').blur();
         })
     })
     //Додавання пароля

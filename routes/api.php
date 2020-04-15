@@ -22,6 +22,7 @@ Route::middleware('auth:api')->group(function(){
             Route::get('/', 'WebController@getApi')->name('webs');
             Route::get('/generate-password', 'WebController@generatePasswordApi')->name('generatePasswordApi');
             Route::get('/add', 'WebController@addWebApi')->name('addWebApi');
+            Route::get('/getSavePassword/{resource}', 'WebResourceController@getSavePassword')->middleware('checkWebResourceForUser')->name('getSavedPassword');
         });
     });
 

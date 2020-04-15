@@ -94,7 +94,7 @@
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  //Показати або сховати пароль при доаванні чи редагуванні
+  //Показати або сховати пароль при додаванні чи редагуванні
   $('.changeTypePassword').on('click', function (event) {
     event.preventDefault();
 
@@ -103,6 +103,69 @@ $(document).ready(function () {
       $(this).attr('title', 'Приховати пароль');
       $($(this).attr('data-i')).removeClass('fa-toggle-off');
       $($(this).attr('data-i')).addClass('fa-toggle-on');
+    } else {
+      $($(this).attr('data-input')).attr('type', 'password');
+      $($(this).attr('data-i')).removeClass('fa-toggle-on');
+      $($(this).attr('data-i')).addClass('fa-toggle-off');
+      $(this).attr('title', 'Показати пароль');
+    }
+  });
+  $('.changeTypeMyPassword').on('click', function (event) {
+    var _this = this;
+
+    event.preventDefault();
+
+    if ($($(this).attr('data-input')).attr('type') == 'password') {
+      if ($(this).attr('data-method') == 1) {
+        Swal.fire({
+          title: 'Введіть секретний пароль',
+          input: 'password',
+          showCancelButton: true,
+          confirmButtonText: 'Подивитись пароль',
+          cancelButtonText: 'Відмінити',
+          showLoaderOnConfirm: false,
+          preConfirm: function preConfirm(secret) {
+            return secret;
+          },
+          allowOutsideClick: function allowOutsideClick() {
+            return !Swal.isLoading();
+          }
+        }).then(function (result) {
+          if (result.value) {
+            $.ajax({
+              type: 'GET',
+              url: '/api/data/' + $('#webs').attr('data-user') + '/webs/getSavePassword/' + $("#changeTypeMyPassword").attr('data-id'),
+              headers: authHeaders,
+              data: {
+                'secret': result.value
+              }
+            }).then(function (response) {
+              if (response) {
+                $($(_this).attr('data-input')).attr('type', 'text');
+                $(_this).attr('title', 'Приховати пароль');
+                $($(_this).attr('data-i')).removeClass('fa-toggle-off');
+                $($(_this).attr('data-i')).addClass('fa-toggle-on');
+                $($(_this).attr('data-input')).val(response);
+              } else {
+                Swal.fire({
+                  type: 'error',
+                  title: "\u041F\u043E\u043C\u0438\u043B\u043A\u0430. \u0421\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0449\u0435 \u0440\u0430\u0437"
+                });
+              }
+            });
+          } else {
+            Swal.fire({
+              type: 'error',
+              title: "\u041F\u043E\u043C\u0438\u043B\u043A\u0430. \u0421\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0449\u0435 \u0440\u0430\u0437"
+            });
+          }
+        });
+      } else {
+        $($(this).attr('data-input')).attr('type', 'text');
+        $(this).attr('title', 'Приховати пароль');
+        $($(this).attr('data-i')).removeClass('fa-toggle-off');
+        $($(this).attr('data-i')).addClass('fa-toggle-on');
+      }
     } else {
       $($(this).attr('data-input')).attr('type', 'password');
       $($(this).attr('data-i')).removeClass('fa-toggle-on');

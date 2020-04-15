@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Enumerators\UserEnumerator;
 use App\Http\Requests\AddWebPassword;
+use App\Http\Requests\EditWebPassword;
 use App\Services\PasswordService;
 use App\User;
 use App\Web;
@@ -74,13 +75,79 @@ class WebResourceController extends Controller
             ],
             'breadcrumb' => [
                 'Облікові записи інтернету' => route('webs', ['user' => $user->id]),
-                'Додати обліковий запис '=> ''
+                'Редагувати обліковий запис '=> ''
             ],
             'user' => $user,
             'resource' => $resource,
+            'web' => $resource->web,
             'password' => $password
 
         ];
         return view('web.editResource', $data);
+    }
+
+    public function getSavePassword(User $user, WebResource $resource, Request $request)
+    {
+        if($resource->method == UserEnumerator::METHOD_SECRET) {
+            $validator = Validator::make($request->all(), [
+                'secret' => ['required','min:8'],
+            ]);
+            if($validator->errors()->any()) {
+                return response()->json(false);
+            }
+            if(Hash::check($request->get('secret'), Auth::user()->secret_password)) {
+                $passwordService = new PasswordService();
+                $password = $passwordService->decrypt($resource->password, $request->get('secret'));
+                return response()->json($password);
+            } else {
+                return response()->json(false);
+            }
+        } else {
+            $passwordService = new PasswordService();
+            $password = $passwordService->decrypt($resource->password, Auth::user()->email_id);
+            return response()->json($password);
+        }
+    }
+
+    public function update(User $user, Web $web, WebResource $resource, EditWebPassword $request)
+    {
+        if($resource->method == UserEnumerator::METHOD_SECRET ) {
+            if(!Hash::check($request->get('secretCheckedPassword'), Auth::user()->secret_password)) {
+                return redirect()->back()->with('message', 'Невдала спроба');;
+            }
+        }
+
+        if((int)$request->get('shifr') === UserEnumerator::METHOD_SECRET  && $resource->method != UserEnumerator::METHOD_SECRET) {
+            if(Hash::check($request->get('secret'), Auth::user()->secret_password)) {
+                $password =new PasswordService();
+                $resource->password = $password->encrypt($request->get('password'), $request->get('secret'));
+            } else {
+                return redirect()->back()->with('message', 'Невдала спроба');;
+            }
+        }
+        if((int)$request->get('shifr') === UserEnumerator::METHOD_SECRET  && $resource->method == UserEnumerator::METHOD_SECRET) {
+            if(Hash::check($request->get('secretCheckedPassword'), Auth::user()->secret_password)) {
+                $password =new PasswordService();
+                $resource->password = $password->encrypt($request->get('password'), $request->get('secretCheckedPassword'));
+            } else {
+                return redirect()->back()->with('message', 'Невдала спроба');;
+            }
+        }
+        if((int)$request->get('shifr') === UserEnumerator::METHOD_SECRET  && $resource->method == UserEnumerator::METHOD_KEY) {
+            if(Hash::check($request->get('secret'), Auth::user()->secret_password)) {
+                $password =new PasswordService();
+                $resource->password = $password->encrypt($request->get('password'), $request->get('secret'));
+            } else {
+                return redirect()->back()->with('message', 'Невдала спроба');;
+            }
+        } else {
+            $password =new PasswordService();
+            $resource->password = $password->encrypt($request->get('password'), Auth::user()->email_id);
+        }
+
+        $resource->method = (int)$request->get('shifr');
+        $resource->login = $request->get('login');
+        $resource->save();
+        return redirect()->back();
     }
 }
