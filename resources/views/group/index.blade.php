@@ -4,15 +4,6 @@
         <div class="col-12">
             <div class="panel panel-locked">
                 <div class="bg-for-panel">
-                    <div class="col-lg-6 col-xs-6 col-sm-6 ">
-                        <h2 class="float-left">
-                            <button data-toggle="modal" data-target="#addWebModal" type="button" class="btn btn-outline-success waves-effect waves-themed" id="addResource"><i class="fal fa-plus" aria-hidden="true"></i> Додати посилання</button>
-                        </h2>
-                        <h2 class="ml-3 float-left">
-                            <button class="btn btn-outline-success waves-effect waves-themed" id="addGroup"><i class="fal fa-object-group"
-                                                                                                               aria-hidden="true"></i> Додати групу</button>
-                        </h2>
-                    </div>
                 </div>
 
                 <div class="panel-container show">
@@ -27,7 +18,8 @@
                                 <table id="webs"
                                        class="table table-bordered table-hover table-striped w-100 dataTable dtr-inline"
                                        role="grid"
-                                        data-user="{{$user->id}}">
+                                        data-user="{{$user->id}}"
+                                        data-group="{{$group->id}}">
                                     <thead>
                                     <tr>
                                         <th></th>
@@ -182,70 +174,8 @@
         </div>
     </div>
 
-    <div class="modal fade" id="editGroupModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">
-                        Редагувати групу
-                    </h4>
-                    <button type="button" class="close closeModal" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fal fa-times"></i></span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h3>Редагувати групу</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-lg-12">
-                            <input type="text" id="groupName" class="form-control" placeholder="Назва групи">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary waves-effect waves-themed closeModal" data-dismiss="modal">Закрити</button>
-                    <button type="button" class="btn btn-primary waves-effect waves-themed" id="editGroupModalButton">Редагувати</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="addToGroup" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">
-                        Додати в групу
-                    </h4>
-                    <button type="button" class="close closeModal" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fal fa-times"></i></span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h3>Додати в групу</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-lg-12">
-                            <select id="groups" class="form-control"></select>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary waves-effect waves-themed closeModal" data-dismiss="modal">Закрити</button>
-                    <button type="button" class="btn btn-primary waves-effect waves-themed" id="addToGroupButton">Додати</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
 @endsection
 @section('scripts')
-    <script src="/acc/js/webs.js"></script>
+    <script src="/acc/js/groups.js"></script>
 
 @endsection

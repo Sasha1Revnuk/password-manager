@@ -83,7 +83,6 @@ class RegisterController extends Controller
     }
     protected function create(array $data)
     {
-        $token = Str::random(64);
         $secretArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
         shuffle($secretArray);
         $secret = '';
@@ -107,7 +106,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'secret_password' => Hash::make($secret),
             'is_active' => UserEnumerator::STATUS_UNACTIVE,
-            'api_token' => $token,
+            'api_token' => Str::random(64),
             'confirm_code' => Str::random(64),
         ]), $secret];
     }

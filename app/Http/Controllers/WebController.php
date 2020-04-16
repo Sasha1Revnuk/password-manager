@@ -20,10 +20,10 @@ class WebController extends Controller
     {
         $data = [
             'meta' => [
-                'pageTitle' => 'Облікові записи інтерену',
+                'pageTitle' => 'Облікові записи',
             ],
             'breadcrumb' => [
-                'Облікові записи інтернету' => ''
+                'Облікові записи' => ''
             ],
             'user' => $user,
             'groups' => $user->webGroups,
@@ -51,6 +51,9 @@ class WebController extends Controller
 
         $data = [];
         foreach ($resources as $resource) {
+            if($resource->web_group_id){
+                continue;
+            }
             if(is_object($resource) && get_class($resource) === Web::class){
                 $fa = '<i class="fal fa-file fa-2x" aria-hidden="true"></i>';
                 $url = parse_url($resource->url);
@@ -62,21 +65,33 @@ class WebController extends Controller
                     $url = $resource->url;
                 }
                 $name ='<b>' . $resource->name . '</b><br /><a href="' . $url . '" target="_blank">'. $resource->url .'<i class="ml-2 fal fa-external-link" aria-hidden="true"></i></a>';
+                $quick = 'Додати до швидкого доступу';
+                if($resource->onQuick) {
+                    $quick = 'Видалити зі швидкого доступу';
+                }
                 if($resource->resources()->count() > 1) {
-                    $login =' <button type="button" data-web="' . $resource->id . '" class="btn btn-xs btn-info waves-effect waves-themed block">Переглянути облікові записи</button>';
+                    $logins = $resource->resources;
+                    $login = '';
+                    foreach ($logins as $log) {
+                        $login .= $log->login . '<br /><a class="btn btn-sm btn-outline-success btn-icon waves-effect waves-themed" href="'. route('editSystemResourceForm', ['user'=>Auth::id(), 'resource' =>$log->id ]).'" data-id="' . $log->id . '"><i class="fal fa-edit"></i></a> 
+                        | <button class="btn btn-sm btn-outline-info btn-icon waves-effect waves-themed copyPassword" data-method="' . $log->method . '" data-id="' . $log->id . '"><i class="fal fa-copy"></i></button> 
+                        | <button class="btn btn-sm btn-outline-danger btn-icon waves-effect waves-themed deleteObl"  data-id="' . $log->id . '"><i class="fal fa-trash" aria-hidden="true"></i></button><hr />';
+                    }
                     $buttons = '<a href="' . $url . '" class="btn btn-outline-success btn-icon waves-effect waves-themed mr-2">
                                                         <i class="fal fa-external-link"></i>
                                                     </a><div class="btn-group" role="group">
                                                     <button type="button" class="btn btn-primary dropdown-toggle waves-effect waves-themed" data-toggle="dropdown" aria-expanded="false">Дії</button>
                                                     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: top, left; top: 35px; left: 0px;">
                                                         <a class="dropdown-item" href="'. route('addFormResource', ['user'=>Auth::id(), 'web' =>$resource->id ]).'" data-id="' . $resource->id . '">Додати обліковий запис</a>
-                                                        <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Додати в швидкий доступ</a>
-                                                        <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Видалити</a>
+                                                        <a class="dropdown-item addToQuick" data-id="' . $resource->id . '">'. $quick .'</a>
+                                                        <a class="dropdown-item addToGroup" data-toggle="modal" data-target="#addToGroup" data-id="' . $resource->id . '">Додати в групу</a>
+                                                        <a class="dropdown-item deleteWeb"  data-id="' . $resource->id . '">Видалити</a>
                                                     </div></div>';
                 } else {
                     $log =  $resource->resources;
                     if(!$log->isEmpty()) {
-                        $login = $log->first()->login;
+                        $res =  $log->first();
+                        $login =$res->login;
                         $buttons = '<a href="' . $url . '" class="btn btn-outline-success btn-icon waves-effect waves-themed mr-2">
                                                         <i class="fal fa-external-link"></i>
                                                     </a><div class="btn-group" role="group">
@@ -84,26 +99,33 @@ class WebController extends Controller
                                                     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: top, left; top: 35px; left: 0px;">
                                                         <a class="dropdown-item" href="'. route('editSystemResourceForm', ['user'=>Auth::id(), 'resource' =>$resource->resources()->first()->id ]).'" data-id="' . $resource->id . '">Редагувати</a>
                                                         <a class="dropdown-item" href="'. route('addFormResource', ['user'=>Auth::id(), 'web' =>$resource->id ]).'" data-id="' . $resource->id . '">Додати обліковий запис</a>
-                                                        <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Скопіювати пароль</a>
-                                                        <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Додати в швидкий доступ</a>
-                                                        <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Видалити</a>
+                                                        <a class="dropdown-item copyPassword" data-method="' . $res->method . '" data-id="' . $res->id . '">Скопіювати пароль</a>
+                                                        <a class="dropdown-item addToQuick" data-id="' . $resource->id . '">'. $quick .'</a>
+                                                        <a class="dropdown-item addToGroup" data-id="' . $resource->id . '" data-toggle="modal" data-target="#addToGroup" >Додати в групу</a>
+                                                        <a class="dropdown-item deleteWeb"  data-id="' . $resource->id . '">Видалити</a>
                                                     </div></div></div>';
                     } else {
                         $login = 'Облікові записи не додані';
-                        $buttons = 'Облікові записи не додані';
+                        $buttons ='<div class="btn-group" role="group">
+                                                    <button type="button" class="btn btn-primary dropdown-toggle waves-effect waves-themed" data-toggle="dropdown" aria-expanded="false">Дії</button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: top, left; top: 35px; left: 0px;">
+                                                        <a class="dropdown-item deleteWeb"  data-id="' . $resource->id . '">Видалити</a>
+                                                    </div></div></div>' ;
                     }
                 }
             } else if(is_object($resource) && get_class($resource) === WebGroup::class) {
                 $fa = '<i class="fal fa-folder fa-2x" aria-hidden="true"></i>';
-                $name ='<a href="#" class="btn btn-outline-success waves-effect waves-themed">'. $resource->name .'<i class="ml-2 fal fa-forward" aria-hidden="true"></i></a>';
-                $login ='-';
-                $buttons = '<button class="btn btn-outline-success btn-icon waves-effect waves-themed mr-2" title="Розгрупувати">
+                $name ='<a href="'. route('showGroup', ['user' => Auth::id(), 'group' => $resource->id]).'" class="btn btn-outline-success waves-effect waves-themed">'. $resource->name .'<i class="ml-2 fal fa-forward" aria-hidden="true"></i></a>';
+                $websCount =  $resource->webs()->count();
+                $login = $websCount . ' ресурсів';
+                $ungroupButton = $websCount > 0 ? '<button class="btn btn-outline-success btn-icon waves-effect waves-themed mr-2 unGroup" data-id="'.$resource->id.'" title="Розгрупувати">
                                                         <i class="fal fa-object-group"></i>
-                                                    </button><div class="btn-group" role="group">
+                                                    </button>' : '';
+                $buttons = $ungroupButton . '<div class="btn-group" role="group">
                                                     <button type="button" class="btn btn-primary dropdown-toggle waves-effect waves-themed" data-toggle="dropdown" aria-expanded="false">Дії</button>
                                                     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: top, left; top: 35px; left: 0px;">
-                                                       <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Редагувати</a>
-                                                        <a class="dropdown-item" href="#" data-id="' . $resource->id . '">Видалити із посиланнями</a>
+                                                       <a class="dropdown-item editGroupHref" data-toggle="modal" data-name="'. $resource->name .'" data-target="#editGroupModal" data-id="' . $resource->id . '">Редагувати</a>
+                                                        <a class="dropdown-item deleteGroupForce" data-id="' . $resource->id . '">Видалити із посиланнями</a>
                                                     </div>
                                                 </div></div>';
             }
@@ -186,6 +208,7 @@ class WebController extends Controller
                 $resource->method = UserEnumerator::METHOD_SECRET;
 
             } else {
+                $web->delete();
                 return response()->json(false);
             }
         } else {
@@ -203,4 +226,35 @@ class WebController extends Controller
 
         return response()->json(true);
     }
+
+    public function deleteApi(User $user, Web $web)
+    {
+        return response()->json($web->delete());
+    }
+
+    public function addToQuick(User $user, Web $web)
+    {
+        if($web->onQuick) {
+            $web->onQuick = 0;
+            $message = 'Видалено із швидкого доступу';
+        } else {
+            $web->onQuick = 1;
+            $message = 'Додано до швидкого доступу';
+        }
+        $web->save();
+        return response()->json($message);
+    }
+
+    public function addToGroup(User $user, Web $web, Request $request)
+    {
+        $web->web_group_id = $request->get('group')?: null;
+        return response()->json($web->save());
+    }
+    public function deleteFromGroup(User $user, Web $web)
+    {
+        $web->web_group_id = null;
+        return response()->json($web->save());
+    }
+
+
 }

@@ -1485,27 +1485,34 @@
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="350" parent="289" name="webs_user_id_foreign">
+    <column id="350" parent="289" name="onQuick">
+      <Position>8</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="351" parent="289" name="webs_user_id_foreign">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="351" parent="289" name="webs_web_group_id_foreign">
+    <index id="352" parent="289" name="webs_web_group_id_foreign">
       <ColNames>web_group_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="352" parent="289" name="PRIMARY">
+    <key id="353" parent="289" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="353" parent="289" name="webs_user_id_foreign">
+    <foreign-key id="354" parent="289" name="webs_user_id_foreign">
       <ColNames>user_id</ColNames>
       <RefSchemaName>password_manager_db</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="354" parent="289" name="webs_web_group_id_foreign">
+    <foreign-key id="355" parent="289" name="webs_web_group_id_foreign">
       <ColNames>web_group_id</ColNames>
       <RefSchemaName>password_manager_db</RefSchemaName>
       <RefTableName>web_groups</RefTableName>

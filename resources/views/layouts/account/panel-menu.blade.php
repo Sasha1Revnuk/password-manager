@@ -14,7 +14,7 @@ $request = new \Illuminate\Http\Request();
             'menuIcon' => 'fal fa-globe',
             'link' => 'webs',
             'params' => ['user' => \Illuminate\Support\Facades\Auth::id()],
-            'title' => 'Облікові записи Інтернету',
+            'title' => 'Облікові записи',
         ])
     </ul>
 </nav>

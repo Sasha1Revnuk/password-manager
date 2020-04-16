@@ -24,7 +24,7 @@ $(document).ready(function () {
             { name: "actions", className: "table-text-align-center", width: "25%"},
         ],
         ajax: {
-            url:'/api/data/' + $('#webs').attr('data-user') + '/webs',
+            url:'/api/data/' + $('#webs').attr('data-user') + '/groups/get-for-group/' + $('#webs').attr('data-group'),
             type: "GET",
             data: {
                 url: function () {return $('#url').val()},
@@ -339,140 +339,10 @@ $(document).ready(function () {
         table.ajax.reload()
     });
 
-    $("#addGroup").on('click', function () {
-        Swal.fire({
-            title: 'Введіть назву нової групи',
-            input: 'text',
-            showCancelButton: true,
-            confirmButtonText: 'Створити групу',
-            cancelButtonText: 'Відмінити',
-            showLoaderOnConfirm: false,
-            preConfirm: (name) => {
-                return name;
-            },
-            allowOutsideClick: () => !Swal.isLoading()
-        }).then((result) => {
-            if (result.value) {
-                $.ajax({
-                    type: 'POST',
-                    url: '/api/data/' + $('#webs').attr('data-user') + '/groups/add',
-                    headers: authHeaders,
-                    data: {
-                        'name': result.value
-                    },
-                }).then((response) => {
-                    if(response) {
-                        Swal.fire({
-                            position: 'top-end',
-                            type: 'success',
-                            title: 'Групу створено',
-                            showConfirmButton: false,
-                            timer: 1500
-                        })
-                    } else {
-                        Swal.fire({
-                            type: 'error',
-                            title: `Помилка. Спробуйте ще раз`,
-
-                        })
-                    }
-                })
-            }  else {
-                Swal.fire({
-                    type: 'error',
-                    title: `Відміна!`,
-
-                })
-            }
-            table.ajax.reload();
-        })
-    })
-
-$('body').on('click', '.editGroupHref', function () {
-    $('#groupName').val($(this).attr('data-name'));
-    $('#editGroupModalButton').attr('data-id', $(this).attr('data-id'));
-})
-
-$('#editGroupModalButton').on('click', function () {
-    $.ajax({
-        type: 'POST',
-        url: '/api/data/' + $('#webs').attr('data-user') + '/groups/edit/' + $(this).attr('data-id'),
-        headers: authHeaders,
-        data: {
-            'name':  $('#groupName').val(),
-        },
-    }).then((response) => {
-        if(response) {
-            Swal.fire({
-                position: 'top-end',
-                type: 'success',
-                title: 'Дані збережені',
-                showConfirmButton: false,
-                timer: 1500
-            })
-        } else {
-            Swal.fire({
-                type: 'error',
-                title: `Помилка. Спробуйте ще раз`,
-
-            })
-        }
-        table.ajax.reload();
-        $('.closeModal').click();
-    })
-    })
-
-    $('body').on('click', '.addToGroup', function () {
-        $('#addToGroupButton').attr('data-id', $(this).attr('data-id'));
+    $('body').on('click', '.deleteFromGroup', function () {
         $.ajax({
             type: 'GET',
-            url: '/api/data/' + $('#webs').attr('data-user') + '/groups/get-for-web/'+ $(this).attr('data-id'),
-            headers: authHeaders,
-        }).then((response) => {
-            if (response) {
-                $('#groups').find('option').remove();
-                $.each(response, function( index, value ) {
-
-                    $('#groups').append('<option value="'+ value.id +'">'+value.name+'</option>');
-                });
-                //console.log(response);
-            }
-        });
-    })
-
-    $('#addToGroupButton').on('click', function () {
-        $.ajax({
-            type: 'GET',
-            url: '/api/data/' + $('#webs').attr('data-user') + '/webs/add-to-group/' + $(this).attr('data-id'),
-            headers: authHeaders,
-            data: {
-                group:  $('#groups').val(),
-            }
-        }).then((response) => {
-            if(response) {
-                Swal.fire({
-                    position: 'top-end',
-                    type: 'success',
-                    title: 'Додано',
-                    showConfirmButton: false,
-                    timer: 1500
-                })
-            } else {
-                Swal.fire({
-                    type: 'error',
-                    title: `Помилка. Спробуйте ще раз`,
-
-                })
-            }
-            table.ajax.reload();
-            $('.closeModal').click();
-        })
-    })
-
-    $('body').on('click', '.deleteGroupForce', function () {
-        $.ajax({
-            type: 'GET',
-            url: '/api/data/' + $('#webs').attr('data-user') + '/groups/delete-force/'+ $(this).attr('data-id'),
+            url: '/api/data/' + $('#webs').attr('data-user') + '/webs/delete-from-group/'+ $(this).attr('data-id'),
             headers: authHeaders,
         }).then((response) => {
             if(response) {
@@ -480,7 +350,7 @@ $('#editGroupModalButton').on('click', function () {
                     position: 'top-end',
                     type: 'success',
                     title: 'Виконано',
-                    text: 'Групу та посилання видалено',
+                    text: 'Виделено із групи',
                     showConfirmButton: false,
                     timer: 1500
                 })
@@ -496,31 +366,8 @@ $('#editGroupModalButton').on('click', function () {
         table.ajax.reload();
     })
 
-    $('body').on('click', '.unGroup', function () {
-        $.ajax({
-            type: 'GET',
-            url: '/api/data/' + $('#webs').attr('data-user') + '/groups/un-group/'+ $(this).attr('data-id'),
-            headers: authHeaders,
-        }).then((response) => {
-            if(response) {
-                Swal.fire({
-                    position: 'top-end',
-                    type: 'success',
-                    title: 'Виконано',
-                    text: 'Розгруповано',
-                    showConfirmButton: false,
-                    timer: 1500
-                })
-            } else {
-                Swal.fire({
-                    type: 'error',
-                    title: `Відміна`,
 
-                })
-            }
 
-        })
-        table.ajax.reload();
-    })
+
 
 });

@@ -39,6 +39,10 @@ Route::middleware(['auth', 'adminActive'])->group(function() {
             Route::get('/edit-resource-system/{resource}', 'WebResourceController@editSystemForm')->middleware('checkWebResourceForUser')->name('editSystemResourceForm');
             Route::post('/update-resource/{web}/{resource}', 'WebResourceController@update')->middleware('checkWebResourceForUser')->name('updateWebResource');
         });
+
+        Route::prefix('groups')->group(function () {
+            Route::get('/show/{group}', 'WebGroupsController@show')->name('showGroup');
+        });
     });
 
 

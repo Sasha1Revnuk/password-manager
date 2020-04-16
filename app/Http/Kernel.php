@@ -66,5 +66,6 @@ class Kernel extends HttpKernel
         'checkUserId' => \App\Http\Middleware\CheckUserID::class,
         'checkWebForUser' => \App\Http\Middleware\CheckUserID::class,
         'checkWebResourceForUser' => \App\Http\Middleware\CheckWebResourceForUser::class,
+        'checkWebGroupForUser' => \App\Http\Middleware\CheckWebGroupsForUser::class,
     ];
 }

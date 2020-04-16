@@ -81,15 +81,15 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/webs.js":
-/*!******************************!*\
-  !*** ./resources/js/webs.js ***!
-  \******************************/
+/***/ "./resources/js/groups.js":
+/*!********************************!*\
+  !*** ./resources/js/groups.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -131,7 +131,7 @@ $(document).ready(function () {
       width: "25%"
     }],
     ajax: {
-      url: '/api/data/' + $('#webs').attr('data-user') + '/webs',
+      url: '/api/data/' + $('#webs').attr('data-user') + '/groups/get-for-group/' + $('#webs').attr('data-group'),
       type: "GET",
       data: {
         url: function url() {
@@ -452,134 +452,10 @@ $(document).ready(function () {
     });
     table.ajax.reload();
   });
-  $("#addGroup").on('click', function () {
-    Swal.fire({
-      title: 'Введіть назву нової групи',
-      input: 'text',
-      showCancelButton: true,
-      confirmButtonText: 'Створити групу',
-      cancelButtonText: 'Відмінити',
-      showLoaderOnConfirm: false,
-      preConfirm: function preConfirm(name) {
-        return name;
-      },
-      allowOutsideClick: function allowOutsideClick() {
-        return !Swal.isLoading();
-      }
-    }).then(function (result) {
-      if (result.value) {
-        $.ajax({
-          type: 'POST',
-          url: '/api/data/' + $('#webs').attr('data-user') + '/groups/add',
-          headers: authHeaders,
-          data: {
-            'name': result.value
-          }
-        }).then(function (response) {
-          if (response) {
-            Swal.fire({
-              position: 'top-end',
-              type: 'success',
-              title: 'Групу створено',
-              showConfirmButton: false,
-              timer: 1500
-            });
-          } else {
-            Swal.fire({
-              type: 'error',
-              title: "\u041F\u043E\u043C\u0438\u043B\u043A\u0430. \u0421\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0449\u0435 \u0440\u0430\u0437"
-            });
-          }
-        });
-      } else {
-        Swal.fire({
-          type: 'error',
-          title: "\u0412\u0456\u0434\u043C\u0456\u043D\u0430!"
-        });
-      }
-
-      table.ajax.reload();
-    });
-  });
-  $('body').on('click', '.editGroupHref', function () {
-    $('#groupName').val($(this).attr('data-name'));
-    $('#editGroupModalButton').attr('data-id', $(this).attr('data-id'));
-  });
-  $('#editGroupModalButton').on('click', function () {
-    $.ajax({
-      type: 'POST',
-      url: '/api/data/' + $('#webs').attr('data-user') + '/groups/edit/' + $(this).attr('data-id'),
-      headers: authHeaders,
-      data: {
-        'name': $('#groupName').val()
-      }
-    }).then(function (response) {
-      if (response) {
-        Swal.fire({
-          position: 'top-end',
-          type: 'success',
-          title: 'Дані збережені',
-          showConfirmButton: false,
-          timer: 1500
-        });
-      } else {
-        Swal.fire({
-          type: 'error',
-          title: "\u041F\u043E\u043C\u0438\u043B\u043A\u0430. \u0421\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0449\u0435 \u0440\u0430\u0437"
-        });
-      }
-
-      table.ajax.reload();
-      $('.closeModal').click();
-    });
-  });
-  $('body').on('click', '.addToGroup', function () {
-    $('#addToGroupButton').attr('data-id', $(this).attr('data-id'));
+  $('body').on('click', '.deleteFromGroup', function () {
     $.ajax({
       type: 'GET',
-      url: '/api/data/' + $('#webs').attr('data-user') + '/groups/get-for-web/' + $(this).attr('data-id'),
-      headers: authHeaders
-    }).then(function (response) {
-      if (response) {
-        $('#groups').find('option').remove();
-        $.each(response, function (index, value) {
-          $('#groups').append('<option value="' + value.id + '">' + value.name + '</option>');
-        }); //console.log(response);
-      }
-    });
-  });
-  $('#addToGroupButton').on('click', function () {
-    $.ajax({
-      type: 'GET',
-      url: '/api/data/' + $('#webs').attr('data-user') + '/webs/add-to-group/' + $(this).attr('data-id'),
-      headers: authHeaders,
-      data: {
-        group: $('#groups').val()
-      }
-    }).then(function (response) {
-      if (response) {
-        Swal.fire({
-          position: 'top-end',
-          type: 'success',
-          title: 'Додано',
-          showConfirmButton: false,
-          timer: 1500
-        });
-      } else {
-        Swal.fire({
-          type: 'error',
-          title: "\u041F\u043E\u043C\u0438\u043B\u043A\u0430. \u0421\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0449\u0435 \u0440\u0430\u0437"
-        });
-      }
-
-      table.ajax.reload();
-      $('.closeModal').click();
-    });
-  });
-  $('body').on('click', '.deleteGroupForce', function () {
-    $.ajax({
-      type: 'GET',
-      url: '/api/data/' + $('#webs').attr('data-user') + '/groups/delete-force/' + $(this).attr('data-id'),
+      url: '/api/data/' + $('#webs').attr('data-user') + '/webs/delete-from-group/' + $(this).attr('data-id'),
       headers: authHeaders
     }).then(function (response) {
       if (response) {
@@ -587,31 +463,7 @@ $(document).ready(function () {
           position: 'top-end',
           type: 'success',
           title: 'Виконано',
-          text: 'Групу та посилання видалено',
-          showConfirmButton: false,
-          timer: 1500
-        });
-      } else {
-        Swal.fire({
-          type: 'error',
-          title: "\u0412\u0456\u0434\u043C\u0456\u043D\u0430"
-        });
-      }
-    });
-    table.ajax.reload();
-  });
-  $('body').on('click', '.unGroup', function () {
-    $.ajax({
-      type: 'GET',
-      url: '/api/data/' + $('#webs').attr('data-user') + '/groups/un-group/' + $(this).attr('data-id'),
-      headers: authHeaders
-    }).then(function (response) {
-      if (response) {
-        Swal.fire({
-          position: 'top-end',
-          type: 'success',
-          title: 'Виконано',
-          text: 'Розгруповано',
+          text: 'Виделено із групи',
           showConfirmButton: false,
           timer: 1500
         });
@@ -628,14 +480,14 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ 1:
-/*!*********************************!*\
-  !*** multi ./resources/js/webs ***!
-  \*********************************/
+/***/ 4:
+/*!***********************************!*\
+  !*** multi ./resources/js/groups ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\Учеба\password-manager\resources\js\webs */"./resources/js/webs.js");
+module.exports = __webpack_require__(/*! E:\Учеба\password-manager\resources\js\groups */"./resources/js/groups.js");
 
 
 /***/ })

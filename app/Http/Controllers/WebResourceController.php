@@ -23,7 +23,7 @@ class WebResourceController extends Controller
                 'pageTitle' => 'Додати обліковий запис для ' . $web->name,
             ],
             'breadcrumb' => [
-                'Облікові записи інтернету' => route('webs', ['user' => $user->id]),
+                'Облікові записи' => route('webs', ['user' => $user->id]),
                 'Додати обліковий запис для ' . $web->name=> ''
             ],
             'user' => $user,
@@ -74,7 +74,7 @@ class WebResourceController extends Controller
                 'pageTitle' => 'Редагувати обліковий запис',
             ],
             'breadcrumb' => [
-                'Облікові записи інтернету' => route('webs', ['user' => $user->id]),
+                'Облікові записи' => route('webs', ['user' => $user->id]),
                 'Редагувати обліковий запис '=> ''
             ],
             'user' => $user,
@@ -149,5 +149,10 @@ class WebResourceController extends Controller
         $resource->login = $request->get('login');
         $resource->save();
         return redirect()->back();
+    }
+
+    public function deleteResourceApi(User $user, WebResource $resource)
+    {
+        return response()->json($resource->delete());
     }
 }
