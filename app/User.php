@@ -60,4 +60,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(WebResource::class);
     }
+
+    public function marks()
+    {
+        return $this->hasMany(Mark::class);
+    }
 }

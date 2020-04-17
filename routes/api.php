@@ -42,6 +42,13 @@ Route::middleware('auth:api')->group(function(){
         Route::prefix('quick')->group(function () {
             Route::get('/', 'QuickController@getApi')->name('getQuickApi');
         });
+
+        Route::prefix('marks')->group(function () {
+            Route::get('/', 'MarksController@getApi')->name('getMarksApi');
+            Route::post('/add', 'MarksController@add')->name('addMarksApi');
+            Route::post('/edit/{mark}', 'MarksController@edit')->middleware('checkMarkForUser')->name('editMarksApi');
+            Route::post('/delete/{mark}', 'MarksController@delete')->middleware('checkMarkForUser')->name('deleteMarksApi');
+        });
     });
 
 });

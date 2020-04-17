@@ -46,6 +46,10 @@ Route::middleware(['auth', 'adminActive'])->group(function() {
         Route::prefix('quick')->group(function () {
             Route::get('/', 'QuickController@index')->name('quick');
         });
+
+        Route::prefix('marks')->group(function () {
+            Route::get('/', 'MarksController@index')->name('marks');
+        });
     });
 
 

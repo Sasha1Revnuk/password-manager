@@ -40,9 +40,6 @@ class QuickController extends Controller
 
         $data = [];
         foreach ($resources as $resource) {
-            if($resource->web_group_id){
-                continue;
-            }
             if(is_object($resource) && get_class($resource) === Web::class){
                 $fa = '<i class="fal fa-file fa-2x" aria-hidden="true"></i>';
                 $url = parse_url($resource->url);

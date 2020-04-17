@@ -16,5 +16,12 @@ $request = new \Illuminate\Http\Request();
             'params' => ['user' => \Illuminate\Support\Facades\Auth::id()],
             'title' => 'Облікові записи',
         ])
+
+        @include('layouts.account.panel-menu.simple', [
+            'menuIcon' => 'fal fa-bookmark',
+            'link' => 'marks',
+            'params' => ['user' => \Illuminate\Support\Facades\Auth::id()],
+            'title' => 'Закладки',
+        ])
     </ul>
 </nav>
