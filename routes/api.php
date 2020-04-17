@@ -38,6 +38,10 @@ Route::middleware('auth:api')->group(function(){
             Route::get('/delete-force/{group}', 'WebGroupsController@deleteForce')->middleware('checkWebGroupForUser')->name('deleteForceGroup');
             Route::get('/un-group/{group}', 'WebGroupsController@unGroup')->middleware('checkWebGroupForUser')->name('unGroup');
         });
+
+        Route::prefix('quick')->group(function () {
+            Route::get('/', 'QuickController@getApi')->name('getQuickApi');
+        });
     });
 
 });

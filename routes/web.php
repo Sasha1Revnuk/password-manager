@@ -30,7 +30,6 @@ Route::get('/confirm-success/','MailController@confirmSucces')->name('mailConfir
 Route::middleware(['auth', 'adminActive'])->group(function() {
 
     Route::prefix('data/{user}')->middleware(['checkUserId'])->group(function() {
-        Route::get('/quick', 'IndexController@quick')->name('quick');
 
         Route::prefix('webs')->group(function () {
             Route::get('/', 'WebController@index')->name('webs');
@@ -42,6 +41,10 @@ Route::middleware(['auth', 'adminActive'])->group(function() {
 
         Route::prefix('groups')->group(function () {
             Route::get('/show/{group}', 'WebGroupsController@show')->name('showGroup');
+        });
+
+        Route::prefix('quick')->group(function () {
+            Route::get('/', 'QuickController@index')->name('quick');
         });
     });
 
