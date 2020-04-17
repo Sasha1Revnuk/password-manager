@@ -13,9 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'IndexController@index')->name('home');
+
 
 
 Auth::routes([
@@ -49,6 +48,16 @@ Route::middleware(['auth', 'adminActive'])->group(function() {
 
         Route::prefix('marks')->group(function () {
             Route::get('/', 'MarksController@index')->name('marks');
+        });
+
+        Route::prefix('notes')->group(function () {
+            Route::get('/', 'NotesController@index')->name('notes');
+            Route::get('/add-form', 'NotesController@addForm')->name('addFormNote');
+            Route::post('/add', 'NotesController@add')->name('addNote');
+            Route::get('/show/{note}', 'NotesController@show')->middleware('checkNoteForUser')->name('showNote');
+            Route::get('/edit/{note}', 'NotesController@edit')->middleware('checkNoteForUser')->name('editNote');
+            Route::post('/update/{note}', 'NotesController@update')->middleware('checkNoteForUser')->name('updateNote');
+            Route::post('/delete/{note}', 'NotesController@delete')->middleware('checkNoteForUser')->name('deleteMarksApi');
         });
     });
 

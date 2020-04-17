@@ -19,4 +19,9 @@ class IndexController extends Controller
         ];
         return view('quick', $data);
     }
+
+    public function index()
+    {
+        return view('welcome');
+    }
 }

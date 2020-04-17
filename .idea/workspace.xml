@@ -2,17 +2,207 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1884c919-dd55-4395-bec9-bb8ebd5a2aed" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckMarkForUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mark.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/marks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/marks/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckNoteForUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/NoteAdd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/NoteEdit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Note.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/less/spinning.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/scss/_spinning.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fontello/css/animation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fontello/css/fontello-codes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fontello/css/fontello-embedded.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fontello/css/fontello-ie7-codes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fontello/css/fontello-ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fontello/css/fontello.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fontello/font/fontello.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fontello/font/fontello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fontello/font/fontello.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fontello/font/fontello.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/montserrat/montserrat-bold-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/montserrat/montserrat-bold-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/montserrat/montserrat-bold-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/montserrat/montserrat-bold-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/montserrat/montserrat-bold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/montserrat/montserrat-regular-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/montserrat/montserrat-regular-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/montserrat/montserrat-regular-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/montserrat/montserrat-regular-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/montserrat/montserrat-regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Bold-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Bold-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Bold-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Bold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-BoldItalic-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-BoldItalic-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-BoldItalic-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-BoldItalic-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-ExtraBold-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-ExtraBold-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-ExtraBold-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-ExtraBold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-ExtraBoldItalic-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-ExtraBoldItalic-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-ExtraBoldItalic-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-ExtraBoldItalic-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Italic-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Italic-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Italic-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Italic-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Light-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Light-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Light-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Light-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-LightItalic-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-LightItalic-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-LightItalic-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-LightItalic-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Regular-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Regular-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Regular-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Semibold-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Semibold-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Semibold-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-Semibold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-SemiboldItalic-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-SemiboldItalic-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-SemiboldItalic-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/fonts/opensans/OpenSans-SemiboldItalic-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/img/escheresque.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/img/escheresque_@2X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/img/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/img/grey_@2X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/img/hero-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/img/hero-bg_@2X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/img/overlay-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/media-queries.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/prettyPhoto.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/feature-image-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/feature-image-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/feature-image-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/feature-image-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/footer-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/hero-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/hero-image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/preloader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/dark_rounded/btnNext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/dark_rounded/btnPrevious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/dark_rounded/contentPattern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/dark_rounded/default_thumbnail.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/dark_rounded/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/dark_rounded/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/dark_square/btnNext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/dark_square/btnPrevious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/dark_square/contentPattern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/dark_square/default_thumbnail.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/dark_square/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/dark_square/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/default/default_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/default/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/default/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/default/sprite_next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/default/sprite_prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/default/sprite_x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/default/sprite_y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/facebook/btnNext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/facebook/btnPrevious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/facebook/contentPatternBottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/facebook/contentPatternLeft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/facebook/contentPatternRight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/facebook/contentPatternTop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/facebook/default_thumbnail.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/facebook/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/facebook/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/light_rounded/btnNext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/light_rounded/btnPrevious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/light_rounded/default_thumbnail.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/light_rounded/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/light_rounded/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/light_square/btnNext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/light_square/btnPrevious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/light_square/default_thumbnail.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/light_square/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/prettyPhoto/light_square/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/sample-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/abstract-vector.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/authentic-vintage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/big/b-abstract-vector.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/big/b-authentic-vintage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/big/b-embossed-paper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/big/b-hipster.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/big/b-judah.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/big/b-line-icons.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/big/b-spot-uv-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/big/b-tshirt-mockup.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/embossed-paper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/hipster.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/judah.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/line-icons.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/spot-uv-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/images/screenshots/tshirt-mockup.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/imagelightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/jquery-1.10.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/jquery-migrate-1.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/jquery.fittext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/jquery.fitvids.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/jquery.flexslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/jquery.prettyPhoto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/modernizr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/waypoints.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/notes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/notesEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/404.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/notes/add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/notes/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/notes/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/notes/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1b18150d-afff-4817-b615-14a17c9692b4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1b18150d-afff-4817-b615-14a17c9692b4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuickController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuickController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/account/panel-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/account/panel-menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
@@ -59,102 +249,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WebController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WebController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-811">
-              <caret line="195" column="35" selection-start-line="192" selection-start-column="8" selection-end-line="195" selection-end-column="35" />
-              <folding>
-                <element signature="e#40#75#0#PHP" expanded="true" />
-                <element signature="e#767#9918#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="49" column="113" selection-start-line="49" selection-start-column="113" selection-end-line="49" selection-end-column="113" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="marks.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/marks.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+            <state relative-caret-position="153">
+              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="panel-menu.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/panel-menu.blade.php">
+      <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="365">
+              <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MarksController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MarksController.php">
+      <file leaf-file-name="RouteServiceProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="122" column="47" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="47" />
+            <state relative-caret-position="-814" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
               <folding>
-                <element signature="e#40#53#0#PHP" expanded="true" />
+                <element signature="e#4944#4950#0#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="marks" pinned="false" current-in-tab="false">
-        <entry file="das://1b18150d-afff-4817-b615-14a17c9692b4/schema/password_manager_db/table/marks">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckMarkForUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckMarkForUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/marks/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-884">
-              <caret line="8" column="78" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="78" />
-              <folding>
-                <element signature="e#3413#3435#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mark.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Mark.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -191,6 +332,8 @@
       <find>#</find>
       <find>href=&quot;#&quot;</find>
       <find>generatePasswordApi</find>
+      <find>Mark</find>
+      <find>Not found</find>
     </findStrings>
     <replaceStrings>
       <replace>Password Manager</replace>
@@ -198,6 +341,7 @@
       <replace>.</replace>
       <replace>Edit</replace>
       <replace>edit</replace>
+      <replace>Note</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -206,23 +350,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/app/Web.php" />
-        <option value="$PROJECT_DIR$/app/Services/ChangeStatusApiService.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/account/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/addPassword.js" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_04_12_060847_add_method_for_user.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_04_11_054017_add_mail_key.php" />
-        <option value="$PROJECT_DIR$/public/acc/css/custom.css" />
-        <option value="$PROJECT_DIR$/app/Services/PasswordService.php" />
-        <option value="$PROJECT_DIR$/resources/views/web/addPassword.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/AddWebPassword.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_04_12_061101_add_method_for_web_resource.php" />
-        <option value="$PROJECT_DIR$/app/WebResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/resources/js/index.js" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/CheckWebResourceForUser.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/CheckWebForUser.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/CheckUserID.php" />
@@ -244,19 +371,36 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/WebController.php" />
         <option value="$PROJECT_DIR$/resources/views/quick/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/quicks.js" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/account/panel-menu.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_04_17_080255_create_marks_table.php" />
         <option value="$PROJECT_DIR$/app/Mark.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/resources/views/marks/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuickController.php" />
-        <option value="$PROJECT_DIR$/webpack.mix.js" />
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/CheckMarkForUser.php" />
-        <option value="$PROJECT_DIR$/resources/js/marks.js" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MarksController.php" />
+        <option value="$PROJECT_DIR$/resources/js/marks.js" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/CheckNoteForUser.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/account/panel-menu.blade.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/resources/js/NotessEdit.js" />
+        <option value="$PROJECT_DIR$/resources/js/notessEdit.js" />
+        <option value="$PROJECT_DIR$/resources/views/notes/index.blade.php" />
+        <option value="$PROJECT_DIR$/webpack.mix.js" />
+        <option value="$PROJECT_DIR$/app/Note.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_04_17_123040_add-notes.php" />
+        <option value="$PROJECT_DIR$/resources/js/notesEdit.js" />
+        <option value="$PROJECT_DIR$/resources/views/notes/add.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/NoteAdd.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/NoteEdit.php" />
+        <option value="$PROJECT_DIR$/resources/views/notes/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/notes/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/notes.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/NotesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/errors/404.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
       </list>
     </option>
   </component>
@@ -411,23 +555,12 @@
               <item name="password-manager" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="password-manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="password-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="password-manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="password-manager" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="password-manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="password-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="password-manager" type="b2602c69:ProjectViewProjectNode" />
@@ -440,14 +573,15 @@
               <item name="password-manager" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="marks" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="password-manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="password-manager" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="password-manager" type="b2602c69:ProjectViewProjectNode" />
@@ -471,10 +605,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Учеба\password-manager\app\Http\Middleware" />
-      <recent name="E:\Учеба\password-manager\resources\js" />
-      <recent name="E:\Учеба\password-manager\app" />
       <recent name="E:\Учеба\password-manager\resources\views" />
+      <recent name="E:\Учеба\password-manager\public\web" />
+      <recent name="E:\Учеба\password-manager\public\acc\js" />
+      <recent name="E:\Учеба\password-manager\resources\views\notes" />
       <recent name="E:\Учеба\password-manager\app\Http\Requests" />
     </key>
   </component>
@@ -516,12 +650,12 @@
       <workItem from="1586934927229" duration="18503000" />
       <workItem from="1586971248996" duration="1417000" />
       <workItem from="1587025155008" duration="24901000" />
-      <workItem from="1587106393609" duration="10636000" />
+      <workItem from="1587106393609" duration="25447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153809000" />
+    <option name="totallyTimeSpent" value="168620000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -542,11 +676,10 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3298969" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32547864" />
-      <window_info anchor="bottom" id="Database Console" order="11" weight="0.3298969" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2442953" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32547864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31073827" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.19664429" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.08859061" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -557,6 +690,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="11" weight="0.3298969" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -594,215 +728,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1752">
-          <caret line="98" column="69" selection-start-line="98" selection-start-column="69" selection-end-line="98" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/AddWebPassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/web/addPassword.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="113" column="142" selection-start-line="113" selection-start-column="137" selection-end-line="113" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/WebResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_12_061101_add_method_for_web_resource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckWebResourceForUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckWebForUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckUserID.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/web/editResource.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="128" column="79" selection-start-line="128" selection-start-column="79" selection-end-line="128" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Rules/CheckUniqueLoginForWebResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/EditWebPassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="52" column="111" selection-start-line="52" selection-start-column="111" selection-end-line="52" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="76" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/editPassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="74" column="13" selection-start-line="22" selection-start-column="12" selection-end-line="74" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Enumerators/UserEnumerator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_16_104143_create_quicks_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WebResourceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="25" column="73" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="73" />
-          <folding>
-            <element signature="e#40#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/WebGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckWebGroupsForUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WebGroupsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/groups.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="352" column="44" selection-start-line="352" selection-start-column="44" selection-end-line="352" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/webs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117">
-          <caret line="501" column="71" selection-start-line="501" selection-start-column="71" selection-end-line="501" selection-end-column="71" />
-          <folding>
-            <element signature="e#3133#3968#0" />
-            <element signature="e#4098#6160#0" />
-            <element signature="e#6215#7654#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1b18150d-afff-4817-b615-14a17c9692b4/schema/password_manager_db/table/web_resources">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1b18150d-afff-4817-b615-14a17c9692b4/schema/password_manager_db/table/web_groups">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/quicks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/quick/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="108" column="42" selection-start-line="108" selection-start-column="42" selection-end-line="108" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/framework/views/8d1dac99180df53b671022b6c370f7d172c5b253.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
@@ -827,24 +752,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_17_080255_create_marks_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/group/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -866,13 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://1b18150d-afff-4817-b615-14a17c9692b4/schema/password_manager_db/table/users">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -884,13 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="69" column="25" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -911,6 +808,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/marks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="65" column="43" lean-forward="true" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckNoteForUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WebController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-797">
+          <caret line="195" column="35" selection-start-line="192" selection-start-column="8" selection-end-line="195" selection-end-column="35" />
+          <folding>
+            <element signature="e#40#75#0#PHP" expanded="true" />
+            <element signature="e#767#9918#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="das://1b18150d-afff-4817-b615-14a17c9692b4/schema/password_manager_db/table/webs">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -925,51 +854,218 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://1b18150d-afff-4817-b615-14a17c9692b4/schema/password_manager_db/table/web_resources">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/panel-menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/marks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="49" column="113" selection-start-line="49" selection-start-column="113" selection-end-line="49" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WebController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-811">
-          <caret line="195" column="35" selection-start-line="192" selection-start-column="8" selection-end-line="195" selection-end-column="35" />
-          <folding>
-            <element signature="e#40#75#0#PHP" expanded="true" />
-            <element signature="e#767#9918#0#PHP" />
-          </folding>
+        <state relative-caret-position="257">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MarksController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="122" column="47" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="47" />
+        <state relative-caret-position="323">
+          <caret line="64" column="5" selection-start-line="12" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
           <folding>
             <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/AddWebPassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/notes/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Note.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_17_080255_create_marks_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_17_123040_add-notes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/acc/js/ckeditor/lang/en.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/notes/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="39" column="65" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="39" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/NoteAdd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b18150d-afff-4817-b615-14a17c9692b4/schema/password_manager_db/table/notes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/notes/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/notes/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="34" column="102" selection-start-line="34" selection-start-column="102" selection-end-line="34" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/notesEdit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/NoteEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/notes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NotesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="128" column="49" selection-start-line="128" selection-start-column="49" selection-end-line="128" selection-end-column="49" />
+          <folding>
+            <element signature="e#40#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/errors.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/acc/img/logo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/acc/img/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/acc/img/logo-flat.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/errors/404.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/account/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="53" column="69" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-814" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+          <folding>
+            <element signature="e#4944#4950#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

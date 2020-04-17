@@ -1,100 +1,183 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-        <title>Laravel</title>
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Password Manager</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{{asset('web/css/default.css')}}">
+    <link rel="stylesheet" href="{{asset('web/css/layout.css')}}">
+    <link rel="stylesheet" href="{{asset('web/css/media-queries.css')}}">
+    <link rel="stylesheet" href="{{asset('web/css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('web/css/prettyPhoto.css')}}">
 
-            .full-height {
-                height: 100vh;
-            }
+    <!-- Script
+    ================================================== -->
+    <script src="{{asset('web/js/modernizr.js')}}"></script>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="{{asset('web/favicon.png')}}" >
 
-            .position-ref {
-                position: relative;
-            }
+</head>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+<body>
 
-            .content {
-                text-align: center;
-            }
+<div id="preloader">
+    <div id="status">
+        <img src="{{asset('web/images/preloader.gif')}}" height="64" width="64" alt="">
+    </div>
+</div>
 
-            .title {
-                font-size: 84px;
-            }
+<!-- Header
+================================================== -->
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/data/'. \Illuminate\Support\Facades\Auth::id() . '/quick') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
+<!-- Homepage Hero
+================================================== -->
+<section id="hero">
+
+    <div class="row">
+
+        <div class="twelve columns">
+            <div class="hero-text">
+                <h1 class="responsive-headline">Password Manager</h1>
+                <p>Прекрасне рішення для зберігання своїх паролів. Перейдіть в особистий кабінет та розпочинайте роботу!</p>
+            </div>
+            @if(\Illuminate\Support\Facades\Auth::check())
+                <div class="buttons">
+                    <a class="button trial" href="{{route('webs', ['user' => \Illuminate\Support\Facades\Auth::id()])}}">Перейти в кабінет</a>
+                </div>
+            @else
+                <div class="buttons">
+                    <a class="button trial" href="/login">Авторизація</a>
+                    <a class="button learn-more " href="/register">Реєстрація</a>
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+            <div class="hero-image">
+                <img src="{{asset('web/images/hero-image1.png')}}" alt="" />
             </div>
+
         </div>
-    </body>
+
+    </div>
+
+</section> <!-- Homepage Hero end -->
+
+
+<!-- Features Section
+================================================== -->
+<section id='features'>
+
+    <div class="row feature design">
+
+        <div class="six columns right">
+            <h3>Вибірковий режим захисту паролей</h3>
+            <p>Користувач сам керує режимом роботи додатку. Підберіть для себе вірний метод та користуйтесь ним. Метод підходить для різних облікових записів, тому в будь який час можна швидко змінити рішення.
+            </p>
+        </div>
+
+        <div class="six columns feature-media left">
+            <img src="{{asset('web/images/feature-image-1.png')}}" alt="" />
+        </div>
+
+    </div>
+
+    <div class="row feature responsive">
+
+        <div class="six columns left">
+            <h3>Надійний захист</h3>
+
+            <p>Окрім звичайного паролю, кожен користувач має свій секретний пароль. Він потрібний для виконання дій, які можуть нести небезпеку при необережному відношенні. Секретний пароль відновити не можна. Натомість є можливість замінити на новий. Проте всі зашифровані облікові записи будуть втрачані! Не загубіть секретний пароль. Його знаєте тільки Ви! Пароль буде надісланий на електронну пошту.
+            </p>
+        </div>
+
+        <div class="six columns feature-media right">
+            <img src="{{asset('web/images/feature-image-2.png')}}" alt="" />
+        </div>
+
+    </div>
+
+    <div class="row feature cross-browser">
+
+        <div class="six columns right">
+            <h3>Зручний особистий кабінет</h3>
+
+            <p>Просторий особистий кабінет без зайвого функціоналу. Легкість і зручність при використанні гарантовані!
+            </p>
+        </div>
+
+        <div class="six columns feature-media left">
+            <img src="{{asset('web/images/feature-image-3.png')}}" alt="" />
+        </div>
+
+    </div>
+
+    <div class="row feature video">
+
+        <div class="six columns left">
+            <h3>Додаткові можливості</h3>
+
+            <p>Окрім керування паролями, Ви отримуєте можливість зберігати особисті закладки веб-сайтів та створювати і керувати нотатки.
+            </p>
+        </div>
+
+        <div class="six columns feature-media left">
+            <img src="{{asset('web/images/feature-image-4.png')}}" alt="" />
+        </div>
+
+    </div>
+
+</section> <!-- Homepage Hero end -->
+
+
+
+<!-- Footer
+================================================== -->
+<footer>
+
+    <div class="row text-center">
+        <p class="copyright">&copy; 2020 Password Manager</p>
+
+        <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#hero"><i class="icon-up-open"></i></a>
+        </div>
+
+    </div> <!-- Row End -->
+
+</footer> <!-- Footer End-->
+
+
+<!-- Java Script
+================================================== -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="{{asset('web/js/jquery-1.10.2.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('web/js/jquery-migrate-1.2.1.min.js')}}"></script>
+
+<script src="{{asset('web/js/jquery.flexslider.js')}}"></script>
+<script src="{{asset('web/js/waypoints.js')}}"></script>
+<script src="{{asset('web/js/jquery.fittext.js')}}"></script>
+<script src="{{asset('web/js/jquery.fitvids.js')}}"></script>
+<script src="{{asset('web/js/imagelightbox.js')}}"></script>
+<script src="{{asset('web/js/jquery.prettyPhoto.js')}}"></script>
+<script src="{{asset('web/js/main.js')}}"></script>
+
+</body>
+
 </html>

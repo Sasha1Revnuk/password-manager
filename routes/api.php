@@ -49,6 +49,11 @@ Route::middleware('auth:api')->group(function(){
             Route::post('/edit/{mark}', 'MarksController@edit')->middleware('checkMarkForUser')->name('editMarksApi');
             Route::post('/delete/{mark}', 'MarksController@delete')->middleware('checkMarkForUser')->name('deleteMarksApi');
         });
+
+        Route::prefix('notes')->group(function () {
+            Route::get('/', 'NotesController@getApi')->name('getNotesApi');
+            Route::post('/delete/{note}', 'NotesController@delete')->middleware('checkNoteForUser')->name('deleteMarksApi');
+        });
     });
 
 });
